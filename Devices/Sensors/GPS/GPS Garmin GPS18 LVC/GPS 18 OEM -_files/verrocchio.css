@@ -1,0 +1,194 @@
+/* BUTTONS */
+/* last modified 2012-02-03 */
+
+/* miscellaneous resets */
+a.btn1, a.btn2, a.btn3 {
+	display:inline-block;
+}
+a.btn1:focus, a.btn2:focus, a.btn3:focus {
+	outline:0; /* removes standard link focus outline */
+}
+input.btn1::-moz-focus-inner, input.btn2::-moz-focus-inner, input.btn3::-moz-focus-inner, button.btn1::-moz-focus-inner, button.btn2::-moz-focus-inner, button.btn3::-moz-focus-inner { /* removes standard button focus outline */ 
+	border:0;
+}
+
+/* default buttons */
+input.btn1, input.btn2, input.btn3, button.btn1, button.btn2, button.btn3 {
+	padding-top:0px;
+	padding-bottom:0px;
+	height:32px; /* button height */
+}
+.btn1, .btn2, .btn3 {
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	line-height:28px; /* button height minus top & bottom border */
+	vertical-align:middle;
+	white-space:nowrap;
+	padding-left:8px;
+	padding-right:8px;
+	border-width:2px;
+	border-style:solid;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.25, rgba(255,255,255,0)),
+		color-stop(1, rgba(255,255,255,0.5))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgba(255,255,255,0) 25%,
+		rgba(255,255,255,0.5) 100%
+	);
+	-webkit-background-clip:padding-box;
+	-moz-background-clip:padding-box;
+	background-clip:padding-box;
+	/* for IE padding stacking */
+	width:auto;
+	overflow:visible;
+	cursor:pointer;
+}
+.btn1, .btn2, .btn3, a.btn1, a.btn2, a.btn3, a.btn1:link, a.btn2:link, a.btn3:link, a.btn1:visited, a.btn2:visited, a.btn3:visited, a.btn1:hover, a.btn2:hover, a.btn3:hover, a.btn1:active, a.btn2:active, a.btn3:active {
+	color:#fff;
+	text-decoration:none;
+}
+
+/* small buttons */
+input.btn-sm, button.btn-sm {
+	height:20px; /* button height */
+}
+input.btn-sm, button.btn-sm, a.btn-sm {
+	font-size:12px;
+	line-height:18px; /* button height minus top & bottom border */
+	padding-left:4px;
+	padding-right:4px;
+	border-width:1px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+}
+
+/* large buttons */
+input.btn-lg, button.btn-lg {
+	height:48px; /* button height */
+}
+input.btn-lg, button.btn-lg, a.btn-lg {
+	font-size:18px;
+	line-height:42px; /* button height minus top & bottom border */
+	padding-left:14px;
+	padding-right:14px;
+	border-width:3px;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+
+/* button 1 color */
+.btn1 {
+	text-shadow:0px 0px 2px #007cc3; /* med blue */
+}
+.btn1:hover {
+	background-color:#3396cf; /* light blue */
+}
+.btn1, .btn1:active, .btn1.disabled:hover  {
+	background-color:#007cc3; /* med blue */
+}
+.btn1, .btn1.disabled:focus {
+	border-color:#007cc3; /* med blue */
+}
+.btn1:focus {
+	border-color:#134561; /* dark blue */
+}
+
+/* button 2 color */
+.btn2 {
+	text-shadow:0px 0px 2px #aab200; /* med green */
+}
+.btn2:hover {
+	background-color:#bbc133; /* light green */
+}
+.btn2, .btn2:active, .btn2.disabled:hover  {
+	background-color:#aab200; /* med green */
+}
+.btn2, .btn2.disabled:focus {
+	border-color:#aab200; /* med green */
+}
+.btn2:focus {
+	border-color:#858c00; /* dark green */
+}
+
+/* button 3 color */
+.btn3 {
+	text-shadow:0px 0px 2px #ff9d00; /* med orange */
+}
+.btn3:hover {
+	background-color:#ffb133; /* light orange */
+}
+.btn3, .btn3:active, .btn3.disabled:hover  {
+	background-color:#ff9d00; /* med orange */
+}
+.btn3, .btn3.disabled:focus {
+	border-color:#ff9d00; /* med orange */
+}
+.btn3:focus {
+	border-color:#995e00; /* dark orange */
+}
+
+/* secondary colors */
+.btn-sec {
+	text-shadow: 0px 0px 2px #fff;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgba(255,255,255,0)),
+		color-stop(.75, rgba(255,255,255,1))
+	);
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgba(255,255,255,0) 0%,
+		rgba(255,255,255,1) 75%
+	);
+}
+.btn-sec, a.btn-sec, a.btn-sec:link, a.btn-sec:visited, a.btn-sec:hover, a.btn-sec:active {
+	color:#555;
+}
+.btn-sec:hover {
+	background-color:#fff;
+}
+.btn-sec, .btn-sec:active, .btn-sec.disabled:hover {
+	background-color:#e5e5e5;
+}
+
+/* button icons */
+.btn1 img, .btn2 img, .btn3 img {
+	vertical-align:text-top;
+	margin:0px 8px 0px 0px;
+	border:none;
+}
+.btn1.btn-lg img, .btn2.btn-lg img, .btn3.btn-lg img {
+	margin-right:14px;
+}
+
+/* disabled state */
+.btn1.disabled, .btn2.disabled, .btn3.disabled {
+	cursor:default;
+	/* IE 8 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	/* IE 5-7 */
+	filter:alpha(opacity=50);
+	/* Netscape */
+	-moz-opacity:0.5;
+	/* Safari 1.x */
+	-khtml-opacity:0.5;
+	/* Good browsers */
+	-webkit-opacity:0.5;
+	opacity:0.5;
+}

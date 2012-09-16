@@ -1,0 +1,3 @@
+Telemetry string: ^ECHOF 1
+USB/RS232 Watchdog: 200ms
+Encoders: 853 ticks/revolution

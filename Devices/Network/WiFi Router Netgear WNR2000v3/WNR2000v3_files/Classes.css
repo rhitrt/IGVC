@@ -1,0 +1,36 @@
+/*
+======================================
+Container Styles
+======================================
+*/
+
+div.main6col
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_6_bg_with_head.gif);
+}
+
+div.main8col
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_8_bg_with_head.gif);
+}
+
+/* ==== Specialty Left-Side Elements ==== */
+
+.SubNav
+{
+    padding: 10px 0px 0px 8px;
+}
+
+
+
+.rootSubNavStyle
+{
+    /*border-bottom: dotted 1px #CCCCCC;*/
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333;
+}
+
+

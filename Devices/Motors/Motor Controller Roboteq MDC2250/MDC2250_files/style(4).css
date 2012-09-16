@@ -1,0 +1,85 @@
+
+/********************************************************************
+ * EXTENDED CSS FILE for RS GALLERY 2
+ * ----------------------------------------------------------------
+ * Copyright (C) 2006 - 2008 JoomlaShine.com. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: JoomlaShine.com
+ * Websites:  http://www.joomlashine.com
+*********************************************************************/
+
+/* My gallery link */
+#jsn-master a.rsg2-mygalleries_link:link,
+#jsn-master a.rsg2-mygalleries_link:visited {
+	background: transparent url(../../images/icon-module-user.png) no-repeat left top;
+	padding: 1px 0 3px 20px;
+	font-weight: bold;
+}
+
+/* Intro text */
+#jsn-master div.intro_text {
+	margin: 1em 0;
+	padding: 1.2em 1.5em;
+	background-color: #f2f2f2;
+	border: 1px solid #e5e5e5;
+}
+
+/* Gallery block */
+#jsn-master div.rsg_galleryblock {
+	width: auto;
+}
+
+#jsn-master div.rsg_galleryblock,
+#jsn-master div.rsg_galleryblock_double_1,
+#jsn-master div.rsg_galleryblock_double_2 {
+	border-color: #b3b3b3;
+}
+
+#jsn-master li.rsg2-galleryList-item {
+	border-color: #b3b3b3;
+}
+
+#jsn-master div.rsg2-galleryList-text {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#jsn-master div.rsg2_details {
+	font-size: 11px;
+	color: #b3b3b3;
+	font-weight: normal;
+}
+
+#jsn-master div.rsg2-galleryList-description {
+	font-size: 13px;
+	font-weight: normal;
+}
+
+#jsn-master div.rsg_sem_inl_Nav {
+	margin-bottom: 1.8em;
+}
+
+#jsn-master div.rsg2-galleryList-thumb,
+#jsn-master div.rsg2-galleryList-thumb_double {
+	margin-right: 10px;
+}
+
+#jsn-master div.rsg_sub_url_single {
+	margin-top: 8px;
+	font-weight: bold;
+	width: auto;
+	float: none;
+}
+
+
+/* Tool tip */
+
+#jsn-master div.tool-tip {
+	background-color: #ffffd5;
+	padding: 3px 5px;
+	border: 1px solid #b3b3b3;
+}
+
+#jsn-master div.tool-text {
+	color: #000000;
+}

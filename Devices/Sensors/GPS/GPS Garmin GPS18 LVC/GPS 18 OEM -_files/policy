@@ -1,0 +1,10 @@
+
+
+
+
+
+
+var basePolicyJSON = '{\"guide\":{\"fmt\":\"results-products\",\"ok\":true},\"baynoteObserver\":{\"dt\":30,\"so\":true,\"uhd\":false,\"cds\":true,\"eec\":true,\"cdt\":true,\"hn\":\"handler2.js\",\"ec\":true,\"uca\":\"315360000000\",\"alt\":true,\"ub\":false,\"ep\":50,\"om\":2,\"sv\":true,\"sdl\":false,\"ok\":true,\"st\":true},\"search\":{\"ok\":true},\"customScript\":{\"hn\":\"custom-script.js\"},\"trail\":{\"tl\":5,\"so\":false,\"ok\":false},\"GuideSet\":{\"eids\":[\"BN_NextStep\",\"BN_Search\",\"BN_FAQ\",\"BN_ProductDetailPage\",\"BN_JoshuaTestTemplate\",\"BN_ALP\"]},\"inf\":{\"dt\":\"Mon Mar 26 15:29:42 PDT 2012\",\"exp\":86400,\"u\":\"ANONYMOUS\",\"cn\":\"garmin\",\"ve\":\"V1\",\"cc\":\"www\",\"cd\":\"d&g&s\"},\"baynoteGuide\":{\"ok\":true},\"guidePro\":{\"ok\":true}}';
+var userPolicyJSON = '{\"dir\":{\"au\":true},\"inf\":{\"dt\":\"Mon Apr 02 16:37:01 PDT 2012\",\"u\":\"6924017192361356544\",\"ve\":\"V1\",\"cd\":\"d&g&s\"}}';
+bnPolicy.registerPolicy(basePolicyJSON, userPolicyJSON);
+

@@ -1,0 +1,25 @@
+﻿#
+# -*- coding: utf-8 -*-
+#     _____
+#    /  _  \
+#   / _/ \  \
+#  / / \_/   \
+# /  \_/  _   \  ___  _    ___   ___   ____   ____   ___   _____  _   _
+# \  / \_/ \  / /  _\| |  | __| / _ \ | ┌┐ \ | ┌┐ \ / _ \ |_   _|| | | |
+#  \ \_/ \_/ /  | |  | |  | └─┐| |_| || └┘ / | └┘_/| |_| |  | |  | └─┘ |
+#   \  \_/  /   | |_ | |_ | ┌─┘|  _  || |\ \ | |   |  _  |  | |  | ┌─┐ |
+#    \_____/    \___/|___||___||_| |_||_| \_\|_|   |_| |_|  |_|  |_| |_|
+#            ROBOTICS™
+#
+#  File: changes.txt
+#  Desc: Release notes for Clearpath Labview software
+#  
+#  Copyright © 2011 Clearpath Robotics, Inc. 
+#  All Rights Reserved
+#
+
+
+Initial release (2011/05/05)
+============================
+Support for control of A200 with cRIO, using Clearpath
+Control Protocol over RS232 serial. Teleop demo included.

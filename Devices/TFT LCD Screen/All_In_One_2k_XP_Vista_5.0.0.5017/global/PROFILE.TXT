@@ -1,0 +1,11 @@
+We provide a full range of controllers for 
+both analog resistive and capacitive touch panels. 
+
+The resistive controller communicates with the PC system directly 
+through RS232, PS/2 or USB port.  
+
+The design is optimized for an accurate, sensitive and quick touch 
+performance as well as an ease of use interface. 
+
+The driver supports a set of operating systems, 
+i.e. Windows XP x64, Windows Vista x64

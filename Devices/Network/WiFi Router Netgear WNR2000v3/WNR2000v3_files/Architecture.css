@@ -1,0 +1,729 @@
+/* ==== Master Positioning Elements ==== */
+
+#wrapper
+{
+    position: relative;
+    left: 0px;
+    text-align: left;
+    width: 848px;
+    margin: 0 auto;
+}
+
+#header
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 0px 0px 0px 0px;
+    width: 848px;
+    height: 147px;
+    background-color: #fff;
+}
+
+#main
+{
+    position: absolute;
+    top: 147px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 848px;
+}
+
+#main-agent
+{
+    position: absolute;
+    top: 14px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#breadcrumbs
+{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 610px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    font-weight: bold;
+    color: #FDAD33;
+}
+
+#breadcrumbs b
+{
+    color: #999;
+}
+
+#utilities
+{
+    position: absolute;
+    top: 5px;
+    left: 500px;
+    width: 308px;
+    text-align:right;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#utilities img
+{
+    vertical-align: middle;
+}
+
+/* ==== Main Body Elements ==== */
+
+#descriptive
+{
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 9px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 832px;
+}
+
+/* ==== Left-side Elements ==== */
+
+.left6col, .left8col /*, .homeMarkets*/
+{
+    display: block;
+    float: left;
+    margin: 0px 0px 3px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.left6col, .left8col 
+{
+    background-repeat: no-repeat;
+    background-position: 0px 2px; /* adjusted downward to line up with body bubble */
+}
+
+.left6col 
+{
+    width: 624px;
+}
+
+.left8col
+{
+    width: 832px;
+}
+
+#detail 
+{
+    height: 30px;
+    min-height: 30px;
+    margin: 10px 0px 10px 12px; /* bottom value is to prevent overlap with container curve */
+    padding: 0px 0px 0px 0px;
+}
+
+div[class] #detail
+{
+    height: auto;
+    width: 590px;
+}
+
+#right2col
+{
+    display: block;
+    float: right;
+    width: 208px;
+    margin: 0px 0px 10px -12px; /* bottom value is to prevent overlap with container curve */
+    padding: 0px 0px 0px 0px;
+}
+
+/* ==== Left-Side Tools ==== */
+
+#marketFilters
+{
+    position: relative;
+    top: 0px;
+    left: 12px;
+    /*width: 600px;*/ /*suresh*/
+    width: 800px;
+    /*font-weight: bold;*/ /*suresh*/
+    /*color: #FDAD33;*/ /*suresh*/
+    /*color: #FDAD33;*/  /*suresh*/
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#marketFilters p
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#marketFilters a
+{
+    font-weight: normal;
+}
+
+#marketFilters b
+{
+    color: #999;
+    font-weight: bold;
+}
+
+/* ==== Right-Side Elements ==== */
+
+.marginBubble2Col, #marginSubNav
+{
+    width: 208px;
+    margin: 2px 0px -2px 0px;
+    padding: 2px 0px 0px 0px;
+}
+
+.marginBubble2Col, #marginSubNav
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_2_bg_with_head.gif);
+    border-bottom: solid 1px #fff; /* firefox hack */
+}
+
+#marginSubNav
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/subnav_top.gif) !important;
+}
+
+
+.pillBottom2Col, .pillBottomSubNav 
+{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 8px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.pillBottom2Col {
+    background-image: url(/euf/assets/images/netgear/images/curves/column_2_bttm.gif);
+}
+
+.pillBottomSubNav {
+    background-image: url(/euf/assets/images/netgear/images/curves/subnav_bttm.gif);
+    height: 16px;   
+}
+
+/* ==== End Main Body Elements ==== */
+
+#containerBottom
+{
+    clear: both;
+    margin: 1px 0px 0px 0px;
+    padding: 0px 0px 2px 0px;
+    background-color: #fff; 
+}
+
+#footer
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #fff;
+    color: #999;
+    border: solid 1px #fff;
+}
+
+#footer p, #footer .legal
+{
+    margin: 3px 10px 10px 10px;
+}
+
+.DataSheetButton
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_2_gold_button_bg.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    margin: 1px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    min-height: 38px;
+}
+
+.DataSheetButton p 
+{
+    /*border: dotted 1px red;*/
+    width: 198px;
+    padding: 7px 0px 7px 10px;
+    margin: 0px -6px 0px 0px;
+    text-align: left;
+}
+
+.DataSheetButton p.divider
+{
+    border-top: solid 1px #efefef;
+}
+
+
+
+.DataSheetButton img 
+{
+    float: left;
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+
+
+
+#productTabs
+{
+    position:relative;
+    left: 0px;
+    width: 620px;
+    border-collapse: collapse;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+#productTabs, .productTab
+{
+    width: 124px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+#productTabs1, .productTab1
+{
+    width: 620px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image:url(/euf/assets/images/netgear/images/curves/detail_tab_bttm.gif); 
+}
+
+#productTabs4, .productTab4
+{
+    width: 620px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image:url(/euf/assets/images/netgear/images/curves/detail_tab_bttm4.gif); 
+}
+
+#productTabs5, .productTab5
+{
+    width: 620px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image:url(/euf/assets/images/netgear/images/curves/detail_tab_bttm5.gif); 
+}
+
+
+.productTab p
+{
+    margin: 2px 5px 1px 5px;
+    line-height: 14px;
+    cursor:pointer;
+}
+
+/* ==== Master Positioning Elements ==== */
+
+#wrapper
+{
+    position: relative;
+    left: 0px;
+    text-align: left;
+    width: 848px;
+    margin: 0 auto;
+}
+
+#header
+{
+	position: absolute;
+	top: -3px;
+	left: 1px;
+	margin: 0px 0px 0px 0px;
+	width: 848px;
+	height: 147px;
+	background-color: #fff;
+}
+
+#main
+{
+    position: absolute;
+    top: 147px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 848px;
+}
+
+#main-agent
+{
+    position: absolute;
+    top: 14px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#breadcrumbs
+{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    width: 610px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    font-weight: bold;
+    color: #FDAD33;
+}
+
+#breadcrumbs b
+{
+    color: #999;
+}
+
+#utilities
+{
+    position: absolute;
+    top: 5px;
+    left: 500px;
+    width: 308px;
+    text-align:right;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#utilities img
+{
+    vertical-align: middle;
+}
+
+/* ==== Main Body Elements ==== */
+
+#descriptive
+{
+    display: block;
+    position: relative;
+    top: 20px;
+    left: 9px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    width: 832px;
+}
+
+/* ==== Left-side Elements ==== */
+
+.left6col, .left8col /*, .homeMarkets*/
+{
+    display: block;
+    float: left;
+    margin: 0px 0px 3px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.left6col, .left8col 
+{
+    background-repeat: no-repeat;
+    background-position: 0px 2px; /* adjusted downward to line up with body bubble */
+}
+
+.left6col 
+{
+    width: 624px;
+}
+
+.left8col
+{
+    width: 832px;
+}
+
+#detail 
+{
+    height: 30px;
+    min-height: 30px;
+    margin: 10px 0px 10px 12px; /* bottom value is to prevent overlap with container curve */
+    padding: 0px 0px 0px 0px;
+}
+
+div[class] #detail
+{
+    height: auto;
+    width: 590px;
+}
+
+#right2col
+{
+    display: block;
+    float: right;
+    width: 208px;
+    margin: 0px 0px 10px -12px; /* bottom value is to prevent overlap with container curve */
+    padding: 0px 0px 0px 0px;
+}
+
+/* ==== Left-Side Tools ==== */
+
+#marketFilters
+{
+    position: relative;
+    top: 0px;
+    left: 12px;
+    /*width: 600px;*/ /*suresh*/
+    width: 800px;
+    /*font-weight: bold;*/ /*suresh*/
+    /*color: #FDAD33;*/ /*suresh*/
+    /*color: #FDAD33;*/  /*suresh*/
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#marketFilters p
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#marketFilters a
+{
+    font-weight: normal;
+}
+
+#marketFilters b
+{
+    color: #999;
+    font-weight: bold;
+}
+
+/* ==== Right-Side Elements ==== */
+
+.marginBubble2Col, #marginSubNav
+{
+    width: 208px;
+    margin: 2px 0px -2px 0px;
+    padding: 2px 0px 0px 0px;
+}
+
+.marginBubble2Col, #marginSubNav
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_2_bg_with_head.gif);
+    border-bottom: solid 1px #fff; /* firefox hack */
+}
+
+#marginSubNav
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/subnav_top.gif) !important;
+}
+
+
+.pillBottom2Col, .pillBottomSubNav 
+{
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 8px;
+    margin: 0px;
+    padding: 0px 0px 2px 0px;
+}
+
+.pillBottom2Col {
+    background-image: url(/euf/assets/images/netgear/images/curves/column_2_bttm.gif);
+}
+
+.pillBottomSubNav {
+    background-image: url(/euf/assets/images/netgear/images/curves/subnav_bttm.gif);
+    height: 16px;   
+}
+
+/* ==== End Main Body Elements ==== */
+
+#containerBottom
+{
+    clear: both;
+    margin: 1px 0px 0px 0px;
+    padding: 0px 0px 2px 0px;
+    background-color: #fff; 
+}
+
+#footer
+{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-color: #fff;
+    color: #999;
+    border: solid 1px #fff;
+}
+
+#footer p, #footer .legal
+{
+    margin: 3px 10px 10px 10px;
+}
+
+.DataSheetButton
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_2_gold_button_bg.gif);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    margin: 1px 0px 0px 0px;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    min-height: 38px;
+}
+
+.DataSheetButton p 
+{
+    /*border: dotted 1px red;*/
+    width: 198px;
+    padding: 7px 0px 7px 10px;
+    margin: 0px -6px 0px 0px;
+    text-align: left;
+}
+
+.DataSheetButton p.divider
+{
+    border-top: solid 1px #efefef;
+}
+
+
+
+.DataSheetButton img 
+{
+    float: left;
+    vertical-align: middle;
+    border-style: none;
+}
+
+
+
+
+
+#productTabs
+{
+    position:relative;
+    left: 0px;
+    width: 620px;
+    border-collapse: collapse;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+
+#productTabs, .productTab
+{
+    width: 124px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+#productTabs1, .productTab1
+{
+    width: 620px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image:url(/euf/assets/images/netgear/images/curves/detail_tab_bttm.gif); 
+}
+
+#productTabs4, .productTab4
+{
+    width: 620px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image:url(/euf/assets/images/netgear/images/curves/detail_tab_bttm4.gif); 
+}
+
+#productTabs5, .productTab5
+{
+    width: 620px;
+    height: 30px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-image:url(/euf/assets/images/netgear/images/curves/detail_tab_bttm5.gif); 
+}
+
+
+.productTab p
+{
+    margin: 2px 5px 1px 5px;
+    line-height: 14px;
+    cursor:pointer;
+}
+
+
+
+/* ==== Home Page Elements ==== */
+
+.homeLeftSideBar
+{
+    width: 208px;
+    margin: 2px 0px -2px 0px;
+    padding: 2px 0px 0px 0px;
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/column_2_bg_with_head.gif);
+    border-bottom: solid 1px #fff; /* firefox hack */
+}
+
+.homeLeftSideBar  ul li a {
+border-top:1px solid #E8EAEB;
+display:block;
+font-size:1.1em;
+padding:5px 9px 5px 16px;
+text-decoration:none;
+}
+
+.homeLeftSideBar  li 
+{
+    list-style-image: none;
+}
+
+.homeLeftSideBar  a {
+color:#3636D5;
+}
+
+.homeLeftSideBar * {
+font-family:verdana,arial,helvetica,sans-serif;
+margin:0;
+}
+
+
+.homeLeftSideBar  ul {
+list-style-type:none;
+padding: 10px;
+}
+
+.homeLeftSideBar  a:hover {
+background-color:#f3f4f5;
+text-decoration: none;
+}
+
+
+.homeLeftSideBar  h1 {
+padding: 5px;
+}
+
+.yui-ac-bd li 
+{
+    list-style-image: none;
+}

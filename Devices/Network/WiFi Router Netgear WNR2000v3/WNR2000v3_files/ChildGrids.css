@@ -1,0 +1,96 @@
+/* 
+===============================================================
+Child List Tables
+
+2in6 = two columns in the Standard6 layout
+3in6 = three columns in the Standard6 layout (or a derivative)
+3in8 = three columns in the Standard8 layout (or a derivative)
+
+In most global definitions, the settings for 2in6 are created.
+They are then overridden as necessary by identifier references
+
+Some styles have additional classes for visual headers
+===============================================================
+*/
+
+#children3in8 
+{
+
+    margin: 0px 0px 20px 8px;
+    padding: 0px 0px 0px 0px;
+}
+
+#children3in8 
+{
+    width: 818px;
+}
+
+#children3in8 table
+{
+    width: 600px;
+    margin: 15px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background-image: url(/euf/assets/images/netgear/images/static/rules_600_2columns.gif);
+    background-repeat: repeat-y;
+    border-collapse: collapse;
+}
+
+#children3in8 table
+{
+    width: 810px;
+    background-image: url(/euf/assets/images/netgear/images/static/rules_810_3columns.gif);
+}
+
+#children3in8 td
+{
+    width: 300px;
+    padding: 0px 10px 10px 15px;
+    vertical-align: top;
+    line-height:16px;
+}
+
+#children3in8 td
+{
+    width: 270px;
+}
+
+/* ==== Product Category Setups ==== */
+
+#children3in8 .listHeading
+{
+    vertical-align: top;
+    padding: 5px 10px 3px 15px;
+}
+
+#children3in8 .listHeading
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/primary_bg_top.gif);
+}
+
+.listHeading img
+{
+    float: right;
+    position: relative;
+    margin: -15px -3px -10px 10px;
+    vertical-align: text-top;
+    border: none;   
+}
+
+#children3in8 .listHeadingLinks
+{
+    height: 34px;
+    padding: 0px 0px 0px 15px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+}
+
+#children3in8 .listHeadingLinks
+{
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/primary_bg_bttm.gif);
+}
+
+.listHeadingLinks img
+{
+    vertical-align: middle;
+}
+

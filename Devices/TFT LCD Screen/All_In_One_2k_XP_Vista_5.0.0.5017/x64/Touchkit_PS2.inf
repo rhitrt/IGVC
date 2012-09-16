@@ -1,0 +1,157 @@
+; touchkit_ps2.inf
+;
+; Installation file (.inf) for the Touchkit device.
+;
+; (c) Copyright 2008 Inc. 
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%TOUCHKIT%
+ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
+Class=Mouse
+CatalogFile=touchkit_ps2.cat
+DriverVer=04/10/2008, 5.0.1.5310
+[SourceDisksNames]
+1 = %DiskId1%,,
+[DestinationDirs]
+DefaultDestDir   = 12
+DLLCopyFiles = 11
+;
+; Driver information
+;
+
+[Manufacturer]
+%TOUCHKIT%   = TouchkitMfg, NTamd64;
+
+[TouchkitMfg.NTamd64]
+%PS2_TOUCH%	     = egxps2_Inst.x64, *PNP0F13
+
+;
+; General installation section
+;
+;====================================================================
+[DefaultInstall.ntamd64]
+CopyFiles=egxfilter.Copy.files
+AddReg=egxfilter.Add.Reg
+DelReg=egxfilter.Del.Reg
+
+[egxfilter.Del.Reg]
+HKLM,"System\CurrentControlSet\Services\egxfilter"
+
+[egxfilter.Add.Reg]
+HKLM,"System\CurrentControlSet\Services\egxfilter","ServiceType",0x00010003,1
+HKLM,"System\CurrentControlSet\Services\egxfilter","StartType",0x00010003,3
+HKLM,"System\CurrentControlSet\Services\egxfilter","ErrorControl",0x00010003,0
+HKLM,"System\CurrentControlSet\Services\egxfilter","LoadOrderGroup",0x00010000,"Pointer Port"
+HKLM,"System\CurrentControlSet\Services\egxfilter","ServiceBinary",0x00010000,"%12%\egxfilter.sys"
+
+[egxfilter.Copy.files]
+egxfilter.sys
+;====================================================================
+; PS2 Installation Section
+;====================================================================
+[egxps2_Inst.x64]
+; perform port related actions from msmouse.inf
+Include=msmouse.inf
+Needs=PS2_Inst
+AddReg=egxps2_AddReg.x64
+CopyFiles=egxps2_Copyfiles.x64, DLLCopyFiles.x64
+
+[egxps2_AddReg.x64]
+;
+; File sections
+;
+;HKR,,EnumPropPages32,,"touchkitprop.dll,EnumPropPages"
+
+[egxps2_CopyFiles.x64]
+egxfilter.sys
+
+[DLLCopyFiles.x64]
+;touchkitprop.dll
+;
+; Service Installation
+;
+
+[egxps2_Inst.x64.Services]
+; Install the port driver and mouclass from msmouse.inf
+Include=msmouse.inf
+Needs=PS2_Inst.Services
+AddService = egxfilter,, egxfilter_Service_Inst.x64
+
+[egxfilter_Service_Inst.x64]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Pointer Port
+ServiceBinary  = %12%\egxfilter.sys
+
+;[egxfilter_EventLog_Inst.x64]
+;AddReg = egxfilter_EventLog_AddReg
+
+;[egxfilter_EventLog_AddReg.x64]
+;HKR,,EventMessageFile,0x00020000,"%SystemRoot%\System32\IoLogMsg.dll;%SystemRoot%\System32\drivers\egxfilter.sys"
+;HKR,,TypesSupported,0x00010001,7
+
+[egxps2_Inst.x64.HW]
+; Add the device upper filter
+Include=msmouse.inf
+Needs=PS2_Inst.HW
+AddReg = egxfilter.HW.AddReg.x64
+;DelReg = egxps2_DelReg.x64
+
+[egxfilter.HW.AddReg.x64]
+HKR,,"UpperFilters",0x00010000,"egxfilter"
+;HKR,,"BeepMode",0x00010003,1
+;HKR,,"MouseMode",0x00010003,0x00000000
+
+;[egxps2_DelReg.x64]
+;HKR,,"BeepMode"
+;HKR,,"BeepFrequency"
+;HKR,,"BeepDuration"
+;HKR,,"MouseMode"
+;HKR,,"ConstDuration"
+;HKR,,"ConstMode"
+;HKR,,"ConstRange"
+;HKR,,"EdgeInfo"
+;HKR,,"Branch"
+;HKR,,"CalInfo"
+;HKR,,"CalSource"
+;HKR,,"LinzInfo"
+;HKR,,"Migrated"
+;HKR,,"MonitorInfo"
+;HKR,,"NativeName"
+;HKR,,"Orient"
+;HKR,,"SymbolicName"
+;HKR,,"TouchGrid"
+;HKR,,"TouchSpeed"
+;
+; Source file information
+;
+[SourceDisksFiles]
+; Files for disk Touchkit Touchscreen Controller. Installation Disk #1 (Mouse)
+egxfilter.sys = 1,,
+;touchkitprop.dll = 1,,
+
+[Strings]
+
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+;
+; Localizable Strings
+;
+
+PS2_TOUCH	= "Touchkit Filter"
+EGX_BUS		= "TouchScreen Enumerator"
+RUNONCEKEYNAME = "Software\Microsoft\Windows\CurrentVersion\RunOnce"
+DiskId1 = "Touchkit. Driver Installation Disk(TouchScreen)"
+TOUCHKIT = "Touchkit"

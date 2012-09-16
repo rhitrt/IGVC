@@ -1,0 +1,10 @@
+[InstallShield Silent]
+Version=v7.00
+File=Log File
+[ResponseResult]
+ResultCode=0
+[Application]
+Name=TouchKit
+Version=1.00.000
+Company=TouchKit
+Lang=0009

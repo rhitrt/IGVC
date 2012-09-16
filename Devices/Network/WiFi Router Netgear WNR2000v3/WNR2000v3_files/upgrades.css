@@ -1,0 +1,1126 @@
+/** ---------------------------------------------------------------------------
+
+ *  File Name:  /euf/assets/themes/standard/upgrades.css
+
+ *  Author:     Upgrades Team
+
+ *  Purpose:    1) Makes specific changes to all sites that go through an upgrade
+
+ *              2) Have default styles that can be uncommented and easily applied to a site
+
+ *              3) Be placed right before the </head> tag so all other css styles can be overridden
+
+ *                 All css edits should be made in this file to ensure maintanability
+
+ *  ---------------------------------------------------------------------------
+
+ */
+
+
+
+
+
+/**
+
+ **   1) default styles applied to all sites
+
+ **/
+
+ 
+
+/* remove header image */
+
+html{ 
+
+background-color:#D2D2D2;
+
+background-image:url(/euf/assets/images/netgear/images/backgrounds/body_bg.jpg); }
+
+/* remove firefox drop shadow */
+
+#rn_Footer, #rn_Body { -moz-box-shadow: none; }
+
+#rn_Footer, #rn_Body { -webkit-box-shadow: none; }
+
+/* add top border to content area */
+
+#rn_Body {border-top:1px solid #DDDDDD;} 
+
+/* upgrades default tabs */
+
+.rn_NavigationTab2 a.rn_SelectedTab { 	background: url(/euf/assets/themes/standard/images/tabBackground.png) repeat-x scroll 0 -18px; }
+
+#rn_Navigation { margin-left: 0; }
+
+.rn_NavigationTab2 a {border:  1px solid #DDD; }
+
+/* lowering main height for MainColumn*/
+
+#rn_MainColumn { min-height:350px; }
+
+/* override height of header to auto */
+
+#rn_Header{ height:auto; min-height:0;}
+
+/* 95% of the time we will not need the logo */
+
+#rn_Logo{ display:none;}
+
+/* Update header font color */
+
+#rn_Header, #rn_Header a { color:#000;}
+
+/* default regular tab color */
+
+#rn_Navigation a{background-color:#FFF;color:#000; }
+
+#rn_Navigation a.rn_SelectedTab{background-color:#0E53A7;color:#fff;}
+
+/* set out of box link color */
+
+a:link, a:visited, a:hover, a:active{ color:#0E53A7; }
+
+/* remove white background pixel at top of search header and h2 headers*/
+
+.rn_Module h3, .rn_Module h2,#rn_SearchControls  {background-image:none; background-color:#EFEFF4; }
+
+/* collapse borders */
+
+table{    border-collapse:collapse;   border-spacing:0; }
+
+
+
+/* ie6 hacks */
+
+/*\*/ * html #rn_Navigation a { background-image:none; } /**/
+
+/*\*/ * html #rn_Navigation a.rn_SelectedTab { background-image:none; } /**/
+
+/*\*/ * html #rn_SearchControls { padding-bottom:25px; } /**/
+
+/*\*/ * html #rn_PageContent.rn_Home .rn_AnswersLink { clear:both; } /**/
+
+/*\*/ * html input, input[type="submit"], button { background-image:none; border: 0px solid #FFFFFF;} /**/
+
+
+
+
+
+/**
+
+ ** 2) Updates quick styles, uncomment a style to quickly edit
+
+ **/
+
+
+
+/* To edit the default font */
+
+/*
+
+   html {   font-family:; }
+
+*/
+
+
+
+/* links */
+
+   a:link{    color:#0E53A7;}
+
+   a:visited{ color:#0E53A7;}
+
+   a:hover{   color:#0E53A7;}
+
+   a:active{  color:#0E53A7;} 
+
+
+
+/* to remove sidebar */
+
+/* 
+
+   #rn_MainColumn{ width:99% }
+
+   #rn_Container{ width:750px;} 
+
+   #rn_SideBar{ display:none; } 
+
+*/
+
+
+
+/* to remove details on answer/list page */
+
+/*
+
+.rn_Multiline2 .rn_ElementsHeader,.rn_Element3, .rn_Multiline2 .rn_ElementsData,.rn_Element2,.rn_Multiline2 br {display:none; }
+
+.rn_Multiline2 .rn_Element1 {  margin-bottom:15px;  }
+
+
+
+/* to show numbered list items on the answers/list page  */
+
+   .rn_Multiline2 ol li {   list-style:decimal outside none; padding-left:10px; }
+
+   .rn_Multiline2 ol {      padding-left:30px; }
+
+
+
+/* make 100% width */
+
+/* 
+
+   #rn_Container{ width:99%;} 
+
+*/ 
+
+
+
+/* selected tab font and background-color */
+
+/* 
+
+   #rn_Navigation a.rn_SelectedTab {color:# ; background-color:#0E53A7; }
+
+   #rn_Navigation a.rn_SelectedTab:hover {color:# ; } 
+
+*/
+
+
+
+/* regular tab font and  background color */
+
+/* 
+
+   #rn_Navigation a {background-color:# ; color:# ; }      
+
+*/
+
+
+
+/* regular tab hover background color */
+
+/* 
+
+   #rn_Navigation a:hover {background-color:# ; } 
+
+*/
+
+   
+
+/* add image to header  */
+
+/* 
+
+   #rn_Header{ background:  url(BACKGROUND_IMAGE) } 
+
+*/
+
+
+
+/* removing footer left padding */
+
+/* 
+
+   #rn_Footer{ padding-left:0; }  
+
+*/
+
+
+
+/* change input/button background color */
+
+/* 
+
+   .rn_SearchButton2 .rn_SubmitButton, input[type="submit"], button { background-color:#0E53A7; } 
+
+*/
+
+
+
+/* change background-color of search area */
+
+/* 
+
+   #rn_SearchControls {background-color:# ; }
+
+*/
+
+
+
+/* Advanced Search Items */
+
+/* hide advanced sort form input */
+
+/* 
+
+   .rn_AdvancedSort{ display:none; }
+
+*/
+
+
+
+/* hide advanced search term form input */
+
+/* 
+
+   .rn_AdvancedKeyword{ display:none; }  
+
+*/
+
+
+
+/* hide rn logo */
+
+/* 
+
+   .rn_RightNowLogo{ display:none; }
+
+*/
+
+
+
+/* to hide the login/sign up widget*/
+
+/*
+
+   #rn_LoginStatus{display:none; }  
+
+*/
+
+
+
+/* include a border below tabs that is larger to mimic classic*/
+
+/* 
+
+   #rn_Body {border-top:10px solid #DDDDDD; }
+
+*/
+
+ 
+
+/* multi line font size */
+
+/*
+
+   .rn_Multiline2 .rn_Element1, .rn_Multiline2 .rn_Element2 {font-size: ; }
+
+*/
+
+
+
+
+
+/**
+
+ **  3) Add in site specific styles here 
+
+ **/
+
+
+
+.rn_SearchButton2 .rn_SubmitButton {
+
+background-color:buttonface;
+
+color:#000000;
+
+cursor:pointer;
+
+font-weight:bold;
+
+padding:6px 10px;
+
+}
+
+#rn_Container {
+
+width:850px;
+
+}
+
+#rn_SideBar {
+
+margin-right:10px;
+
+}
+
+#rn_Header {
+
+padding:0 0;
+
+}
+
+#header {
+
+margin:0 auto;
+
+position:relative;
+
+}
+
+#rn_MainColumn {
+
+padding:0 0 10px 0;
+
+width:73%;
+
+margin-right:0px; /*Added by abdul on 13th Aug*/
+
+}
+
+#breadcrumbs {
+
+left:10px;
+
+position:relative;
+
+/*top:-4px; Abdul */
+top:-1px;
+
+top:2px;
+
+float:left;
+
+}
+
+#rn_SideBar .rn_Padding {
+
+padding:19px 0 2px;
+
+width:100%;
+
+}
+
+#rn_SideBar {
+
+float:right;
+
+margin-right:0px;
+
+width:24.8%;
+
+}
+
+
+
+#rn_SearchControls {
+
+background-color:#FFFFFF;
+
+border: none;
+
+margin-left:2px;
+
+}
+
+
+
+#rn_MainColumn {
+
+background:transparent none repeat scroll 0 0;
+
+}
+
+
+
+#leftcol {
+
+background-image:url(/euf/assets/themes/standard/images/netgear/images/backgrounds/column_6_bg_with_head.gif);
+
+overflow:hidden;
+
+padding:0 0 20px 10px;
+
+width:838px;
+
+}
+
+
+
+#rn_SideBar {
+
+margin-right:7px;
+
+}
+
+
+
+#rn_Footer,#rn_Body{
+
+padding:0px;
+
+width:100%;
+
+border:none;
+
+}
+
+#rn_Footer{
+
+padding:0 0 20px 0;
+
+width:100%;
+
+}
+
+#containerBottom {
+
+background-color:#FFFFFF;
+
+clear:both;
+
+margin:0px;
+
+padding:0 0 0px;
+
+border:none;
+
+}
+
+
+
+/** css for home page **/
+
+.SHPFirstRow {
+
+background-image:url(/euf/assets/themes/standard/images/netgear/shp/cs_boxes2a.gif);
+
+background-repeat:no-repeat;
+
+/*height:250px;*/
+
+height:270px;
+
+padding:5px 10px 10px;
+
+}
+
+
+
+.SHPMiddletop {
+
+background-color:#FFFFFF;
+
+background-image:url(/euf/assets/themes/standard/images/netgear/shp/cs_curves_middle_top.gif);
+
+background-repeat:no-repeat;
+
+padding:0;
+
+width:850px;
+
+height:10px;
+
+}
+
+
+
+.SHPSecondRow {
+
+background-image:url(/euf/assets/themes/standard/images/netgear/shp/cs_curves_middle_bottom2.gif);
+
+background-repeat:no-repeat;
+
+height:190px;
+
+padding:20px 10px 0 12px;
+
+/*clear:left;*/
+
+}
+
+
+
+.SHPBottom {
+
+background-color:#FFFFFF;
+
+padding:0;
+
+width:850px;
+
+}
+
+
+
+div.SHPRow2Pod1 {
+
+float:left;
+
+height:175px;
+
+padding:5px 5px 0;
+
+width:252px;
+
+}
+
+
+
+div.SHPRow2Pod2 {
+
+float:left;
+
+height:175px;
+
+margin:0 0 0 5px;
+
+padding:5px 5px 0;
+
+width:275px;
+
+}
+
+
+
+div.SHPRow2Pod3 {
+
+float:right;
+
+height:175px;
+
+padding:5px 5px 0;
+
+width:255px;
+
+}
+
+
+
+#rn_MainColumn {
+
+min-height:0;
+
+height:auto;
+
+}
+
+
+
+div.SHPPodPromotion {
+
+border:medium none;
+
+float:right;
+
+height:250px;
+
+margin:0;
+
+padding:0 6px 0 0;
+
+text-align:center;
+
+width:255px;
+
+}
+
+
+
+div.SHPPodSearch {
+
+border:medium none;
+
+/*float:left;*/
+
+font-family:Verdana,Arial,Sans-Serif;
+
+height:114px;
+
+padding:2px 5px 0;
+
+width:543px;
+
+}
+
+
+
+div.SHPPodSearch2 {
+
+font-family:Verdana,Arial,Sans-Serif;
+
+margin-top:10px;
+
+width:543px;
+
+}
+
+.SHPPodSearch2 #rn_SearchControls {
+
+background-color:transparent;
+
+}
+
+
+
+#search_col {
+
+float:left;
+
+}
+
+
+
+.SHPFirstRow #rn_MainColumn{
+
+width:543px;
+
+}
+
+#rn_LoginStatus {
+
+margin-top:-4px;
+
+}
+
+/*** end of css for home page **/
+
+
+
+#children3in8-row { margin-top: 20px; }
+
+#children3in8 .cell { padding: 0 10px 10px 15px; line-height: 16px; vertical-align: top; width: 245px; }
+
+#children3in8 .maincell { float: left; width: 270px; padding-bottom: 15px; /* padding: 5px 10px 3px 15px; */ }
+
+
+
+.rn_SimpleSearch .rn_SearchField {
+
+border:1px solid;
+
+margin-left:2px;
+
+}
+
+
+
+#leftcol_products {
+
+background-image:url(/euf/assets/themes/standard/images/netgear/images/backgrounds/column_8_bg_with_head.gif);
+
+overflow:hidden;
+
+padding:0 0 20px 10px;
+
+width:100%; /* Abdul */
+
+}
+
+
+
+#leftcol_products #rn_MainColumn{
+
+width: 99%;
+
+}
+
+
+
+/** css for answers detail page **/
+
+.rn_RelatedAnswers2 {
+
+padding:10px 15px;
+
+}
+
+
+
+.rn_RelatedAnswers2 li {
+
+list-style-image:none;
+
+margin-bottom:5px;
+
+}
+
+
+
+.rn_RelatedAnswers2 h2 {
+
+color:#FDAD33;
+
+font-size:14px;
+
+font-family:Verdana,Arial,Sans-Serif;
+
+}
+
+
+
+#search_box{
+
+/*padding: 0px 10px 5px 10px;*/
+
+padding: 5px 15px;
+
+}
+
+
+
+#translate_box  {
+
+/*padding: 0px 10px 0px 10px;*/
+
+padding: 5px 15px;
+
+}
+
+/** end of css for details page**/
+
+
+
+.rn_AnswerList h1{
+
+padding:8px;
+
+}
+
+.rn_AnswerDetail{
+
+padding:10px 5px 10px 10px;
+
+}
+
+
+
+.rn_FormSubmit input[type="submit"] {
+
+background:#6A6B6E url(/euf/assets/images/bg_greybutton_hover.gif) repeat-x scroll left center;
+
+border:0 solid #FFFFFF;
+
+}
+
+
+
+.rn_SmartAssistantDialog .rn_List li {
+
+text-align:left;
+
+}
+
+
+
+#rn_SearchControls_bg #rn_SearchControls{
+
+background-color:transparent;
+
+}
+
+
+
+#rn_SearchControls form input[type="submit"], #rn_SearchControls form input[type="image"] {
+
+margin:1.05em 0 0 1.3em;
+
+padding:0.5em 1em;
+
+}
+
+
+
+.rn_NavigationTab2 a {
+
+font-size:1.5em;
+
+}
+
+
+
+#rn_PageTitle {
+
+border-bottom:none;
+
+margin:0 0 0 10px;
+
+padding: 16px 0px 5px 0px;
+
+clear:left;
+
+}
+
+
+
+#overview_leftcol {
+
+width:160px;
+
+float:left;
+
+}
+
+
+
+#overview_rightcol {
+
+position:relative;
+
+width:550px;
+
+right:75px; 	
+
+float:right;
+
+}
+
+
+
+#descriptive {
+
+left:0px;
+
+}
+
+
+
+#utilities {
+
+position:relative;
+
+top:-14px;
+
+}
+
+
+
+.SHPPodSearch2 #rn_SearchControls form div.rn_SearchButton2 .rn_SubmitButton {
+
+margin:0 0 0 1.3em;
+
+padding:0.4em 1em;
+
+}
+
+
+
+.SHPPodSearch2 #rn_SearchControls form div.rn_SearchButton2 .rn_SubmitButton {
+
+margin:0 0 0 1.3em;
+
+padding:0.4em 1em;
+
+}
+
+
+
+.SHPPodSearch2 #rn_SearchControls {
+
+padding:8px 0 8px 5px;
+
+}
+
+
+
+#leftcol #rn_MainColumn #utilities {
+
+position:relative;
+
+top:-14px;
+
+z-index: 2;
+
+}
+
+
+
+#rn_Body #leftcol #rn_MainColumn #descriptive {
+
+width:100%;
+
+}
+
+
+
+/* css edits by tom.wilson */
+
+#header{ top: 0px; left:0; height:146px; width:850px; }
+
+#rn_Container{ background-color:#FFF;  }
+
+#rn_LoginStatus a { font-weight:normal; margin-right:15px; }
+
+#rn_PageTitle.rn_Home #rn_SearchControls .rn_SearchButton2 { position:relative; top:15px; }
+
+
+
+.rn_KeywordText2 label { text-align:left;  }
+
+
+
+#rn_SideBar .rn_Padding { overflow:visible; position:relative; }
+
+#rn_SideBar  { overflow:hidden; position:relative; }
+
+/* move search button to the left inside of input */
+
+.rn_SimpleSearch .rn_SearchImage {right:2.2em; }
+
+
+
+#product_family #rn_PageContent{
+
+width:98%;
+
+padding: 0px 0px 0px 10px;
+
+}
+
+
+
+#products_model .rn_AnswerDetail{
+
+padding:0px;
+
+}
+
+
+
+#marginSubNav #search_box h2 {
+
+color:#FDAD33;
+
+font-size:14px;
+
+}
+
+
+
+/* top menu */
+
+#wrapper2010 {
+
+background:none repeat scroll 0 0 #FFFFFF;
+
+left:0;
+
+margin:0 auto;
+
+position:relative;
+
+text-align:left;
+
+width:848px;
+
+}
+
+
+
+
+
+#header2010 {
+
+background:url("/euf/assets/themes/standard/images/netgear2010/header_bg.gif") no-repeat scroll center top transparent;
+
+height:89px;
+
+position:relative;
+
+}
+
+
+
+#header2010 .logo {
+
+left:18px;
+
+position:absolute;
+
+top:26px;
+
+width:185px;
+
+}
+
+
+
+/*----------------- MAIN MENU -----------------*/
+
+#menu			{ padding: 0 0 0 20px; margin: 0 auto; list-style:none; height: 58px; background: url(/euf/assets/themes/standard/images/netgear2010/nav_bg.jpg) center top no-repeat; position:relative; }
+
+#menu table 	{ border-collapse:collapse; width:0; height:0; margin:-3px -10px; }
+
+#menu li 		{ float:left; list-style-image: none; }
+
+
+
+#menu li a 					{ display:block; height:30px; line-height:30px; padding:0 10px; float:left; color:#333; text-decoration:none; font-size: 10px; background: url(/euf/assets/themes/standard/images/netgear2010/menuli-bg.gif) right top no-repeat; }
+
+#menu li a.last 			{ display:block; height:30px; line-height:30px; padding:0 10px 0 37px; float:left; color:#333; text-decoration:none; font-size: 10px; background: url(/euf/assets/themes/standard/images/netgear2010/shoppingcart-bg.gif) 11px center no-repeat; }
+
+#menu li a:hover			{ background: url(/euf/assets/themes/standard/images/netgear2010/menulihover-bg.gif) right top no-repeat; line-height:30px; height:31px; color: #FFF; }
+
+#menu li a:hover.last		{ background: url(/euf/assets/themes/standard/images/netgear2010/menulihoverlast-bg.gif) left top no-repeat; line-height:30px; height:31px; }
+
+#menu li:hover > a 			{ background: url(/euf/assets/themes/standard/images/netgear2010/menulihover-bg.gif) right top no-repeat; line-height:30px; height:31px; }
+
+#menu li:hover > a.last 	{ background: url(/euf/assets/themes/standard/images/netgear2010/menulihoverlast-bg.gif) left top no-repeat; line-height:30px; height:31px; }
+
+
+
+#menu ul 					{ padding:0; margin: 0 0 0 24px; list-style:none; position:absolute; height:25px; width:800px; background:#FFF; left:-9999px; top:30px; z-index:10; }
+
+#menu ul li 				{ height:28px; line-height:28px; }
+
+#menu ul li a 				{ color: #666; padding: 0 12px; height: 28px; line-height: 28px; background: url(/euf/assets/themes/standard/images/netgear2010/menulisub-bg.gif) top right no-repeat; }
+
+#menu ul li a.end			{ background: none; }
+
+#menu ul li a:hover 		{  height: 28px; line-height: 28px; background: url(/euf/assets/themes/standard/images/netgear2010/menulisubhover-bg.gif) top right no-repeat; color:#FFF; }
+
+#menu ul li a:hover.end 	{  height: 28px; line-height: 28px; background: url(/euf/assets/themes/standard/images/netgear2010/menulisubhoverend-bg.gif) top right no-repeat; color:#FFF;}
+
+#menu :hover ul 			{ left:0; }
+
+
+
+
+
+#search_box .rn_SearchInput{
+
+float:left;
+
+}
+
+
+
+#search_box .rn_SearchInput .rn_KeywordText2 input {
+
+margin-right:4px;
+
+width:124px;
+
+}
+
+
+
+#search_box .rn_SearchButton2 .rn_SubmitButton {
+
+padding:4px 10px;
+
+}
+
+
+
+#rn_SearchControls .rn_SearchInput input {
+
+margin-bottom:0px;
+
+}
+
+
+
+.rn_AnswerList #rn_SearchControls .rn_AdvancedSearchDialog {
+
+/*float:left;
+
+position:absolute;*/
+
+clear:left;
+
+}

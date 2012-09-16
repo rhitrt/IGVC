@@ -1,0 +1,1 @@
+var LC_Status = 'offline';

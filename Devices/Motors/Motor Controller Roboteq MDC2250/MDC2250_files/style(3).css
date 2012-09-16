@@ -1,0 +1,162 @@
+
+/********************************************************************
+ * EXTENDED CSS FILE for JEVENTS
+ * ----------------------------------------------------------------
+ * Copyright (C) 2006 - 2008 JoomlaShine.com. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: JoomlaShine.com
+ * Websites:  http://www.joomlashine.com
+*********************************************************************/
+
+
+/** JEvents **/
+
+#jsn-master table.cal_table {
+   border: 1px solid #ffffff;
+}
+
+#jsn-master .cal_table td {
+   border: 1px solid #ffffff;
+}
+
+#jsn-master tr.icon_labels {
+	font-size: 0.9em;
+}
+
+#jsn-master td.cal_td_daysnames {
+	border: none;
+	background: #366999;
+	color: #ffffff;
+	padding: 3px 0;
+}
+
+#jsn-master td.mod_events_td_dayname .sunday,
+#jsn-master td.cal_td_daysnames .sunday {
+	color: #ff9900;
+}
+
+#jsn-master td.cal_td_daysoutofmonth,
+#jsn-master td.cal_td_daysnoevents,
+#jsn-master td.cal_td_today {
+	padding: 6px !important;
+}
+
+#jsn-master td.mod_events_td_dayoutofmonth,
+#jsn-master td.cal_td_daysoutofmonth {
+	background-color: #e5e5e5;
+}
+
+#jsn-master td.mod_events_td_daynoevents,
+#jsn-master td.cal_td_daysnoevents,
+#jsn-master td.ev_td_left {
+	background-color: #f2f2f2;
+}
+
+#jsn-master td.mod_events_td_todaywithevents,
+#jsn-master td.cal_td_today,
+#jsn-master td.ev_td_today {
+	background-color: #ffa07a;
+}
+
+#jsn-master td.iconic_td {
+}
+
+#jsn-master div.ev_navigation {
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	background: transparent url(../../images/dot.png) repeat-x left bottom;
+}
+
+#jsn-master div#ev_icon_yearly {
+	background-image: url(cal5x.png);
+}
+
+#jsn-master div#ev_icon_monthly {
+	background-image: url(cal1x.png);
+}
+
+#jsn-master div#ev_icon_weekly {
+	background-image: url(cal2x.png);
+}
+
+#jsn-master div#ev_icon_daily {
+	background-image: url(cal3x.png);
+}
+
+#jsn-master div#ev_icon_search {
+	background-image: url(cal8x.png);
+}
+
+#jsn-master div#ev_icon_jumpto {
+	background-image: url(cal9x.png);
+}
+
+#jsn-master td.nav_bar_cell {
+	background-color: #f2f2f2;
+	border: 1px solid #e5e5e5;
+	padding: 1em 1.2em;
+}
+
+#jsn-master td.nav_bar_cell a {
+	background: transparent url(../../images/arrow.png) no-repeat left 4px;
+	padding-left: 10px;
+}
+
+
+/* Add Event */
+
+#jsn-master td.sectionname {
+	font-size: 1.5em;
+	color: #000000;
+}
+
+
+
+/* Mini Calendar module */
+
+#jsn-master table.mod_events_monthyear {
+	width: 150px;
+	height: 25px;
+	background: #404040 url(evback.png) repeat-x left top;
+}
+
+#jsn-master table.mod_events_monthyear a.mod_events_link:link,
+#jsn-master table.mod_events_monthyear a.mod_events_link:visited {
+	color: #e5e5e5;
+}
+
+#jsn-master table.mod_events_monthyear a.mod_events_link:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+#jsn-master table.mod_events_table {
+	width: 150px;
+	background-color: #ffffff;
+}
+
+#jsn-master td.mod_events_td_daywithevents {
+	background-color: #dbe7f8;
+}
+
+#jsn-master a.mod_events_daylink:visited {
+	color: #000000;
+}
+
+#jsn-master a.mod_events_daylink:hover {
+	color: red;
+}
+
+/* Latest Events */
+
+#jsn-master table.mod_events_latest_table td.mod_events_latest,
+#jsn-master table.mod_events_latest_table td.mod_events_latest_first {
+	border-top: none;
+	background: transparent url(../../images/dot.png) repeat-x left top;
+	padding: 8px 0;
+}
+
+#jsn-master span.mod_events_latest_content a:link,
+#jsn-master span.mod_events_latest_content a:visited {
+	color: #366999;
+}

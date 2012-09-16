@@ -1,0 +1,32 @@
+#vmfilter .inputbox{
+	border: none;
+	width: 35px;
+	height: 21px;
+	padding-top: 0px;
+}
+
+.paramLabel{
+	/*display: block;*/
+}
+
+.inpcontainer{
+	padding: 2px 0;
+}
+
+.unit{
+}
+
+.vmfilterBtn{
+}
+
+#max_current{
+	width: 30px;
+}
+
+#max_volt{
+	width: 30px;
+}
+
+#motor_type-holder .paramLabel{
+	display: block;
+}

@@ -1,0 +1,1 @@
+__lc_load({"server": "chat1f.livechatinc.com"})

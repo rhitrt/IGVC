@@ -1,0 +1,132 @@
+; sertouch.inf
+;
+; Installation file (.inf) for the Touchkit device.
+;
+; (c) Copyright 2008 Inc. 
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%TOUCHKIT%
+ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
+Class=Mouse
+CatalogFile=sertouch.cat
+DriverVer=04/10/2008, 5.0.1.5310
+[SourceDisksNames]
+1 = %DiskId1%,,
+[DestinationDirs]
+DefaultDestDir   = 12
+DLLCopyFiles = 11
+;
+; Driver information
+;
+
+[Manufacturer]
+%TOUCHKIT%   = TouchkitMfg, NTamd64 ;
+
+[TouchkitMfg.NTamd64]
+%SERTOUCH_PNP%       = sertouch_Inst.x64, SERENUM\EGX5800
+%SERIAL_LEGACY%	     = sertouch_Inst.x64, SERENUM\EGX5900
+%SERIAL_COMBUS%	     = sertouch_Inst.x64, SERENUM\EGX6000
+
+;
+; General installation section
+;
+; ======= Serial Touchscreen Section ====================
+[sertouch_Inst.x64]
+AddReg=sertouch_AddReg.x64
+; Copy the driver over
+CopyFiles=SerCopyFiles_Drivers.x64, DLLCopyFiles.x64
+
+[sertouch_AddReg.x64]
+;
+; File sections
+;
+;HKR,,EnumPropPages32,,"SerTKProp.dll,EnumPropPages"
+
+[SerCopyFiles_Drivers.x64]
+sertouch.sys
+
+[DLLCopyFiles.x64]
+;SerTKProp.dll
+;
+; Service Installation
+;
+
+[sertouch_Inst.x64.HW]
+DelReg = sertouch_DelReg.x64
+AddReg = sertouch_Inst_AddReg.x64
+
+[sertouch_Inst.x64.Services]
+AddService = sertouch, 0x00000002 , sertouch_Service_Inst.x64, sertouch_EventLog_Inst.x64
+; Install mouclass.sys from msmouse.inf
+Include=msmouse.inf
+Needs=MouClass.Services
+
+[sertouch_Service_Inst.x64]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Pointer Port
+ServiceBinary  = %12%\sertouch.sys
+
+[sertouch_EventLog_Inst.x64]
+AddReg = sertouch_EventLog_AddReg.x64
+
+[sertouch_EventLog_AddReg.x64]
+HKR,,EventMessageFile,0x00020000,"%SystemRoot%\System32\IoLogMsg.dll;%SystemRoot%\System32\drivers\sertouch.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[sertouch_Inst_AddReg.x64]
+;HKR,,"BeepMode",0x00010003,1
+;HKR,,"MouseMode",0x00010003,0x00000000
+
+[sertouch_DelReg.x64]
+;HKR,,"BeepMode"
+;HKR,,"BeepFrequency"
+;HKR,,"BeepDuration"
+;HKR,,"MouseMode"
+;HKR,,"ConstDuration"
+;HKR,,"ConstMode"
+;HKR,,"ConstRange"
+;HKR,,"EdgeInfo"
+;HKR,,"Branch"
+;HKR,,"CalInfo"
+;HKR,,"CalSource"
+;HKR,,"LinzInfo"
+;HKR,,"Migrated"
+;HKR,,"MonitorInfo"
+;HKR,,"NativeName"
+;HKR,,"Orient"
+;HKR,,"SymbolicName"
+;HKR,,"TouchGrid"
+;HKR,,"TouchSpeed"
+
+
+[SourceDisksFiles]
+; Files for disk Touchkit Touchscreen Controller. Installation Disk #1 (Mouse)
+sertouch.sys = 1,,
+;egxfilter.sys = 1,,
+
+
+[Strings]
+
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+;
+; Localizable Strings
+;
+SERTOUCH_PNP 	= "Serial Touchscreen Controller x64(Professional)"
+SERIAL_LEGACY	= "Serial Touchscreen Controller x64"
+SERIAL_COMBUS = "Serial Touchscreen Controller x64(ComBus)"
+DiskId1 = "Touchkit. Driver Installation Disk(TouchScreen)"
+TOUCHKIT = "Touchkit"

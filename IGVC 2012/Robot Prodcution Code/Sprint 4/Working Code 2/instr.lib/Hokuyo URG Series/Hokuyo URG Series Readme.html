@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<title>Instrument Driver Readme</title></head>
+<body>
+<h2>Hokuyo URG Series Instrument Driver Readme</h2>
+<para>To rate this instrument driver, go to the driver download page on the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.</para>
+<h4>1. Overview</h4>
+<para>
+Instrument Driver Technology: LabVIEW Plug and Play (project-style)
+<br>
+Manufacturer: Hokuyo
+<br>
+Supported Language(s): LabVIEW
+<br>
+Supported Model(s): UTM-30LX, UHG-08LX, UBG-04LX-F01, URG-04LX (in SCIP 2.0 mode)<br>
+Model(s) Tested: URG-04LX, UTM-30LX<br>
+Interface(s): USB, Serial
+<br>
+Firmware Revision(s) Tested: </para>URG-04LX: <para>3.1.00, </para>UTM-30LX:&nbsp;1.31.<br><para>
+<br>
+Certified: Yes
+<br>
+NI Supported: Yes
+<br>
+Source Code Available: Yes
+<br>
+<br>
+Driver Revision: 2.1
+<br>
+Original Release Date: 06/20/2008
+<br>
+Current Revision Date: 08/20/2009
+</para>
+<h4>2. Required Software</h4>
+<para>Some software components need to be installed before using this
+instrument driver. The minimum versions of these components are listed
+below, and can be downloaded from the Download Site.
+<br>
+<br>
+NI-VISA 3.2 
+<br>URG USB Driver
+<br>
+<br>
+Refer to the <i>LabVIEW Help</i> for more information about software requirements. You access the <i>LabVIEW Help</i> by selecting <i>Help»Search the LabVIEW Help</i>.</para>
+<h4>3. Known Issues</h4>
+<para>
+To report issues or provide feedback about this instrument driver,
+please send an email to <a href="mailto:instrument.drivers@ni.com">instrument.drivers@ni.com</a>.</para>
+<br>
+<br><ul>
+<li>If you are upgrading your existing application from version 1.0 to
+version 2.x of the instrument driver, the upgraded Initialize VI will
+be broken if a value is not connected to the Protocol connector on the
+connector pane. The Protocol input is now required because the 2.x
+version of the instrument driver only supports SCIP 2.0. If your
+application requires the use of SCIP 1.1, please continue using Version
+1.0 of the instrument driver.</li>
+<li>
+Although the support for the&nbsp;UHG-08LX, and UBG-04LX-F01 has been implemented in this driver, they have not been tested.</li>
+<li>Not all VIs or settings in a VI in this instrument driver are fully
+supported by all instruments models. This is documented throughout the
+instrument driver. Refer to instrument documentation for more details
+pertaining to your specific model. &nbsp;Examples of some potential differences in models:</li>
+<ul>
+<li>UTM-30LX
+returns a command error when attempting to configure serial baud rate
+(device does not have a serial interface), but URG-04LX accepts command
+regardless of whether it is connected by USB or serial.</li>
+<li>Though documented in the SCIP 2.0 spec, no device tested works with configure laser sensitivity mode</li><li>The
+UTM-30LX device accepts 2-byte encoding instructions when acquiring
+data, but returns the same data as if it were issued a 3-byte command
+resulting in bad data.</li>
+</ul>
+<li>Once an instrument is put into time
+configuration mode through the Match Time VI, the only commands
+accepted by the instrument will be Match Time commands until it is
+taken out of this mode or the instrument is power cycled.</li>
+</ul>
+<br>
+<para></para>
+<h4>4. Revision History</h4>
+<para>The latest version of this and other LabVIEW and LabWindows/CVI
+instrument drivers can be downloaded at the <a href="http://www.ni.com/idnet">Instrument Driver Network</a>.<br>
+
+<br></para><para><br>REV 1.0, 06/20/2008
+<br>Modified By: Logan Lamb, Austin, TX.
+<br>Original Release.
+<br>
+<br></para>REV 2.0, 02/10/2008
+<br>Modified By: Travis Mansfield, Austin, TX.
+<br>Overhaul of driver to improve design, and add functionality. &nbsp;<br><ul><li>Support
+for SCIP 1.1 has been deprecated, however all known Hokuyo Lidar
+drivers previously supported have the capability of working with driver
+version 2.0. &nbsp;If your driver was using SCIP 1.1 protocol, refer to
+your instrument's manual to determine how to configure your instrument
+to use SCIP 2.0, and make modifications to any VIs which use the
+instrument driver's initialize VI.</li><li>The following public VIs were added to the instrument driver:</li><ul><li>Configure Laser Sensitivity</li><li>Sensor Specification</li><li>Match Time</li><li>Sensor State</li></ul><li>Error handling was greatly improved to return errors specific to each command, and general command errors</li><li>The following VIs were changed:</li><ul><li>Initialize</li><ul><li>Reset? input added</li><li>ID Query? input added</li><li>Protocol
+input gives error for SCIP 1.1 mode, but has a new input "Convert to
+latest" which attempts to put a SCIP 1.1 instrument into SCIP 2.0 mode</li><li>Protocol
+input is now required. &nbsp;If unwired before, your VI will break
+after upgrading (the old default was SCIP 1.1 is not supported, so a VI
+change needed to be made).</li></ul><li>Configure
+Serial Baud Rate</li><ul><li>The VI now sets the VISA baud rate after setting the
+instrument's serial baud rate, existing code which set the VISA
+property node after calling this VI should continue to function</li><li>The VI waits one second after issuing the command to the instrument to give the instrument command time to take effect</li></ul><li>Acquire Data</li><ul><li>A&nbsp;new Data Encoding Width input was added to specify whether you would like to perform a 2 or 3 byte encoded data read</li><li>A
+major bug was fixed in the VI which corrects incorrect computation of
+the Direction output on instruments other than the URG-04LX which may
+have different front steps and angular resolutions than the URG-04LX</li></ul><li>Configure Laser Power - Ignore Errors input was added</li><li>Close - was modifed to attempt to turn off the instrument's laser regardless of whether or not an error is input to the VI</li><li>VI Tree, and&nbsp;palette menus -&nbsp;modified to include the new VIs</li></ul></ul>
+
+
+REV 2.1, 08/20/2009<br>Modified By: Nicu Stiurca, Austin, TX.
+<br>Modified driver to work on cRIO.<br>
+<ul>
+<li>The following VIs were renamed:</li>
+<ul>
+<li>Initialize renamed to Initialize-Standard. This VI still does all the initialization.</li>
+</ul>
+<li>The following VIs were created:</li>
+<ul>
+<li>Initialize-cRIO USB</li>
+<ul>
+<li>A simple wrapper which typecasts the VISA resource type to the type expected by Initialize-Standard.vi.</li>
+</ul>
+<li>Initialize</li>
+<ul>
+<li>Polymorphic VI composed of Initialize-Standard (ie, the old Initialize) and Initialize-cRIO USB.</li>
+</ul></ul>
+<li>The following VIs were modified:</li>
+<ul>
+<li>Hokuyo URG Series Configure and Acquire Data</li>
+<ul>
+<li>Uses the new (polymorphic) Initialize.vi.</li>
+<li>Graph no longer uses a logarithmic scale.</li>
+</ul></ul>
+<ul>
+<li>Initialize-Instr (ie, the old Initialize)</li>
+<ul>
+<li>Only tries to set serial-specific attributes if the underlying type of the VISA resource is Serial.</li>
+<li>No longer configures the VISA resource to automatically append the termination character to all messages.</li>
+<li>Added UHG-08LX to the list of officially supported models.</li>
+</ul>
+<li>Query Instrument</li>
+<ul>
+<li>Appends
+every command with a termination character (newline) since VISA cannot be configured to do so automatically regardless of whether the underlying resource type is Serial or USB Raw.</li>
+</ul></ul></ul>
+<br>
+</body></html>

@@ -1,0 +1,2 @@
+Name: NavCom SF-2050M
+Serial: 1158

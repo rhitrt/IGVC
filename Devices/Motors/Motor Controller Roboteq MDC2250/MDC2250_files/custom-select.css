@@ -1,0 +1,24 @@
+.hidden { display:none !important; }
+#motor_type { display:block; width:150px; float:left; }
+
+
+/* .message { width:50%; margin:15px auto 40px auto; padding:20px; text-align:center; background:#efefef; border:2px solid #c8c8c8; font-weight:bold; }
+Used only when enhanced */
+.enhanced a { font-size:11px; text-decoration:none; color:#7e7e7e; }
+.dropdown { float:left; width:120px; position:relative; }
+.dropdown .options { position:absolute; left:3px; top:23px; overflow:auto; background:#fff; width:90px; border:1px solid #c8c8c8; border-top:0; padding:7px 10px; }
+.dropdown .options ul { list-style:none; margin:0; padding:0; }
+.dropdown .options a { display:block; font-size:12px; padding:2px 0; }
+.dropdown .options a:hover { text-decoration:none; }
+a.dropdown_toggle { display:block; height:24px; background:url(../img/enhanced-select-arrow.jpg) top right no-repeat; padding-right:25px; }
+a.dropdown_toggle span { display:block; background:url(../img/enhanced-select-bg.jpg) no-repeat; padding:5px 0 0 8px; height:20px; cursor:pointer !important; }
+
+#vmfilter a:link, #vmfilter a:visited, #vmfilter a:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+#vmfilter ul li{
+	margin: 0;
+	padding: 0;
+}

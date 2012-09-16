@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RoboteqDevice", "RoboteqDevice\RoboteqDevice.vcxproj", "{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample", "Sample\Sample.vcxproj", "{78C2DE53-111C-47BE-B935-9411C87A52E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316} = {A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+		Template|Mixed Platforms = Template|Mixed Platforms
+		Template|Win32 = Template|Win32
+		Template|x86 = Template|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Debug|Win32.Build.0 = Debug|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Debug|x86.ActiveCfg = Debug|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Release|Win32.ActiveCfg = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Release|Win32.Build.0 = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Release|x86.ActiveCfg = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Template|Mixed Platforms.ActiveCfg = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Template|Mixed Platforms.Build.0 = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Template|Win32.ActiveCfg = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Template|Win32.Build.0 = Release|Win32
+		{A86F2666-EBF6-CF1F-5FCB-16DDFC38F316}.Template|x86.ActiveCfg = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Debug|Win32.Build.0 = Debug|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Debug|x86.ActiveCfg = Debug|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Release|Win32.ActiveCfg = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Release|Win32.Build.0 = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Release|x86.ActiveCfg = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Template|Mixed Platforms.ActiveCfg = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Template|Mixed Platforms.Build.0 = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Template|Win32.ActiveCfg = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Template|Win32.Build.0 = Release|Win32
+		{78C2DE53-111C-47BE-B935-9411C87A52E4}.Template|x86.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

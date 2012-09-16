@@ -1,0 +1,52 @@
+.checkbox, .radio {
+	width: 19px;
+	height: 18px;
+	padding: 3px 0 0;
+	background: url(../img/checkbox.png) no-repeat;
+	display: block;
+	/*clear: left;*/
+	float: left;
+}
+
+#num_channel-holder input, #num_channel-holder label{
+	float: left;
+}
+
+#vmfilter dl, #vmfilter dt{
+	margin: 0;
+	padding: 0;
+}
+
+#vmfilter label{
+	padding: 2px 5px 0 0;
+}
+
+.encode_in-holder span{
+	padding-top: 2px;
+}
+
+.radio {
+	background: url(../img/radio.png) no-repeat;
+}
+.select {
+	position: absolute;
+	width: 100px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 21px;
+	padding: 0 0px 0 8px;
+	color: #000;
+	font: 12px/21px arial,sans-serif;
+	background: url(../img/select.gif) no-repeat;
+	overflow: hidden;
+}
+
+.vmfilterBtn .button{
+	background: url(../img/button.gif) no-repeat;
+	border: none;
+	color:white;
+	height:20px;
+	width:55px;	
+}
+
+#vmfilter .inputbox{
+	background: url(../img/inputbox.gif) no-repeat;
+}

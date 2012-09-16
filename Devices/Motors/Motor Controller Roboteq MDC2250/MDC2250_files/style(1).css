@@ -1,0 +1,116 @@
+
+/********************************************************************
+ * EXTENDED CSS FILE for DOCMAN
+ * ----------------------------------------------------------------
+ * Copyright (C) 2006 - 2008 JoomlaShine.com. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: JoomlaShine.com
+ * Websites:  http://www.joomlashine.com
+*********************************************************************/
+
+
+/** DocMan **/
+
+#jsn-master #dm_cats h3,
+#jsn-master #dm_docs h3 {
+	background-color: #366999;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1em;
+	text-transform: uppercase;
+	padding: .5em 1em;
+}
+
+#jsn-master #dm_docs h3 span,
+#jsn-master #dm_cats h3 span {
+	margin: -15px 0 0 0;
+}
+
+/* Hack for IE6 */
+* html #jsn-master #dm_docs h3 span,
+* html #jsn-master #dm_cats h3 span {
+	margin: -25px 6px 0 0;
+}
+
+/* Hack for IE7 */
+*:first-child+body #dm_docs h3 span,
+*:first-child+body #dm_cats h3 span {
+	margin: -25px 6px 0 0;
+}
+
+#jsn-master .dm_doc thead,
+#jsn-master #dm_tooltip thead { 
+	background-color: #366999;
+	color: #ffffff;
+}
+
+#jsn-master a.dm_name:link,
+#jsn-master a.dm_name:visited {
+	padding: 0;
+	line-height: 32px;
+	display: inline;
+}
+
+#jsn-master a.dm_name:hover {
+	background: none;
+	color: #366999;
+}
+
+#jsn-master div.dm_name {
+	color: #000000;
+	margin: 6px 0 2px 0;
+}
+
+#jsn-master .dm_description {
+	background: none;
+	padding: 5px 2px 8px 2px;
+	clear: both;
+}
+
+.clr {
+	clear: both;
+}
+
+#jsn-master .dm_form {
+	padding: 10px;
+	width: auto;
+}
+
+#jsn-master #dm_title {
+	padding-left: 0;
+}
+
+#jsn-master .dm_separator {
+	height: 8px;
+}
+
+#jsn-master .dm_counter {
+	float: none;
+	color: #595959;
+	font-weight: bold;
+}
+
+#jsn-master .dm_files {
+	margin-right: 15px;
+}
+
+#jsn-master .dm_date {
+	display: inline;
+	margin: -25px 15px 0 0;
+}
+
+
+#jsn-master ul.mod_docman_catdown,
+#jsn-master ul.mod_docman_catdown-box,
+#jsn-master ul.mod_docman_latestdown {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#jsn-master ul.mod_docman_catdown li,
+#jsn-master ul.mod_docman_catdown-box li,
+#jsn-master ul.mod_docman_latestdown li {
+	margin: 0;
+	padding: 3px 0;
+}

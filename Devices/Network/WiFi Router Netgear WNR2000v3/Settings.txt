@@ -1,0 +1,8 @@
+SSID: RHITRT
+Security: WPA2-PSK [AES]
+Passphrase: robot1874
+
+Moxom: 192.168.1.100
+Ports
+	VNC: 5900
+	MSRDP: 3389

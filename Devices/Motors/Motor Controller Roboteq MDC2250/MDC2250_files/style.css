@@ -1,0 +1,107 @@
+
+/********************************************************************
+ * EXTENDED CSS FILE for COMMUNITY BUILDER
+ * ----------------------------------------------------------------
+ * Copyright (C) 2006 - 2008 JoomlaShine.com. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: JoomlaShine.com
+ * Websites:  http://www.joomlashine.com
+*********************************************************************/
+
+
+/* CB Menu */
+
+#jsn-master div#conteneurmenu {
+	background: transparent url(../../images/dot.png) repeat-x left bottom;
+	margin: 0;
+	padding: 0;
+}
+
+#jsn-master ul.cbpMenu {
+	margin: 0;
+	padding: 0;
+}
+
+#jsn-master ul.cbpMenu a:link,
+#jsn-master ul.cbpMenu a:visited {
+	background-color: #404040;
+	padding: 5px 3px;
+	color: #ffffff;
+}
+
+#jsn-master ul.cbpMenu a:hover {
+	background-color: #595959;
+}
+
+#jsn-master li.cbMenu {
+	border: none;
+}
+
+#jsn-master ul.cbSSmenu {
+	border: none;
+	margin: 0 !important;
+}
+
+#jsn-master ul.cbSSmenu li {
+	border: none;
+	width: 185px;
+}
+
+#jsn-master ul.cbSSmenu a:link,
+#jsn-master ul.cbSSmenu a:visited {
+	display: block;
+	border-top: 1px solid #366999;
+	border-right: none;
+	border-bottom: 1px solid #162c40;
+	border-left: 1px solid #162c40;
+	background: #284d73 none;
+	color: #cfdbe5;
+	padding: 3px 10px;
+	font-size: 0.9em;
+	font-weight: normal;
+	text-decoration: none;
+	height: 1%;
+}
+
+#jsn-master ul.cbSSmenu a:hover {
+	border-top: 1px solid #1f3d59;
+	background-color: #1f3d59;
+	color: #ffffff;
+}
+
+
+/* CB Info Panel */
+
+#jsn-master div#cbProfileTitle {
+	margin-top: 0.6em;
+}
+
+#jsn-master table.cbStatusList {
+	border: 2px solid #d9d9d9;
+}
+
+#jsn-master table.cb-tips-bg {
+	background-color: #366999;
+}
+
+#jsn-master table.cb-tips-fg {
+	background-color: #f2f2f2;
+}
+
+#jsn-master td.cb-tips-capfont {
+	padding: 3px 5px;
+}
+
+#jsn-master td.cb-tips-font {
+	padding: 5px;
+}
+
+
+/** LOGIN MODULE **/
+
+#jsn-master div.cbPosTop {
+}
+
+#jsn-master div.cbPosTabMain {
+	
+}

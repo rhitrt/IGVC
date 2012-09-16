@@ -1,0 +1,341 @@
+
+[Main]
+Manufacture=eGalax
+Model=SCAT8600
+SizeOfTouchscreen=17.2
+Version=1
+HoldArea=8
+HoldTime=1
+HoldFilterEnabled=yes
+HoldResetEnabled=yes
+HoldResetDuration=10
+StableFilterEnabled=yes
+StableFilterOrder=4
+StableFilterArea=8
+ForceSkipCnts=4
+NormalSkipCnts=4
+StraySkip=4
+InvalidStrayResetEnabled=yes
+InvalidStrarResetPeriod=10
+DischargeTime=3
+StrayLowLimit=5000
+StrayHighLimit=6200
+InvalidStrayPeriod=10
+SkipDisplacementLimit=10
+MaxStrayChanged=500
+NumsOfFreq=28
+XYHistro=32
+StrayHistro=32
+ACCLimit=100
+InnerRing=10
+OuterRing=100
+TouchSpace=1000
+
+[Freq0]
+Value=24KHz
+PWMDivider=250
+DutyFactor=12		// Duty Cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq1]
+Value=25KHz
+PWMDivider=240
+DutyFactor=232		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq2]
+Value=26KHz
+PWMDivider=230
+DutyFactor=18		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq3]
+Value=27KHz
+PWMDivider=220
+DutyFactor=23 		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq4]
+Value=28KHz
+PWMDivider=210
+DutyFactor=184		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq5]
+Value=30KHz
+PWMDivider=200
+DutyFactor=168		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq6]
+Value=31KHz
+PWMDivider=190
+DutyFactor=150		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq7]
+Value=32KHz
+PWMDivider=250		// 
+DutyFactor=195		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq8]
+Value=33KHz
+PWMDivider=240		// duty cycle
+DutyFactor=218		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq9]
+Value=34KHz
+PWMDivider=230
+DutyFactor=195		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1500
+GainStage2 = 1600
+GainStage3 = 3500
+GainStage4 = 7000
+
+[Freq10]
+Value=36KHz
+PWMDivider=220
+DutyFactor=175		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 5000
+GainStage2 = 1500
+GainStage3 = 4000
+GainStage4 = 7000
+
+[Freq11]
+Value=38KHz
+PWMDivider=210		// duty cycle
+DutyFactor=158
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 5000
+GainStage2 = 1500
+GainStage3 = 4000
+GainStage4 = 7000
+
+[Freq12]
+Value=40KHz		// 40KHz is not good for most case
+PWMDivider=220
+DutyFactor=200		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 5000
+GainStage2 = 2000
+GainStage3 = 4000
+GainStage4 = 7000
+
+[Freq13]
+Value=10KHz
+PWMDivider=220
+DutyFactor=56		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 400
+GainStage2 = 600
+GainStage3 = 3000
+GainStage4 = 6000
+
+[Freq14]
+Value=12KHz
+PWMDivider=250
+DutyFactor=56		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 400
+GainStage2 = 1350
+GainStage3 = 3300
+GainStage4 = 6300
+
+[Freq15]
+Value=13KHz
+PWMDivider=230
+DutyFactor=56		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 300
+GainStage2 = 1350
+GainStage3 = 3000
+GainStage4 = 5800
+
+[Freq16]
+Value=14KHz
+PWMDivider=210
+DutyFactor=60		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 400
+GainStage2 = 1350
+GainStage3 = 3000
+GainStage4 = 6400
+
+[Freq17]
+Value=15KHz
+PWMDivider=190
+DutyFactor=36		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 400
+GainStage2 = 1300
+GainStage3 = 3050
+GainStage4 = 5900
+
+[Freq18]
+Value=16KHz
+PWMDivider=250
+DutyFactor=36		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1000
+GainStage2 = 1400
+GainStage3 = 3000
+GainStage4 = 6200
+
+[Freq19]
+Value=16K6Hz
+PWMDivider=240
+dutyFactor=56		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 700
+GainStage2 = 1800
+GainStage3 = 3800
+GainStage4 = 7100
+
+[Freq20]
+Value=17KHz
+PWMDivider=230
+DutyFactor=46		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 750
+GainStage2 = 2000
+GainStage3 = 3900
+GainStage4 = 7200
+
+[Freq21]		// Not good for most case
+Value=18KHz
+PWMDivider = 220
+DutyFactor=26		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 400
+GainStage2 = 1350
+GainStage3 = 3000
+GainStage4 = 5800
+
+[Freq22]
+Value=19KHz
+PWMDivider=210
+DutyFactor=40		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 850
+GainStage2 = 1900
+GainStage3 = 4800
+GainStage4 = 7200
+
+[Freq23]
+Value=19K2Hz
+PWMDivider=250
+DutyFactor=40		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1050
+GainStage2 = 1900
+GainStage3 = 4000
+GainStage4 = 7200
+
+[Freq24]
+Value=20KHz
+PWMDivider=240
+DutyFactor=40		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1050
+GainStage2 = 2000
+GainStage3 = 4000
+GainStage4 = 7200
+
+[Freq25]
+Value=20K8Hz
+PWMDivider=230
+DutyFactor=40		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1000
+GainStage2 = 1800
+GainStage3 = 2800
+GainStage4 = 7200
+
+[Freq26]
+Value=21KHz
+PWMDivider=220
+DutyFactor=40		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1100
+GainStage2 = 1800
+GainStage3 = 4000
+GainStage4 = 7200
+
+[Freq27]
+Value=22KHz
+PWMDivider=210
+DutyFactor=40		// duty cycle
+Width=4			// pulse width
+CircuitCompensation=40
+GainStage1 = 1200
+GainStage2 = 1900
+GainStage3 = 1800
+GainStage4 = 7200
+

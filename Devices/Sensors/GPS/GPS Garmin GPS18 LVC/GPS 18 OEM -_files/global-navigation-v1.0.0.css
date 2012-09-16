@@ -1,0 +1,463 @@
+/* global header (whitefox)
+     written by U.S. user experience team { #MERICA }
+     compatible with blueprint + 960.gs + THE GRID */
+
+/*---------------------------------------------------
+    Temporarily Hiding Utility Nav Items
+---------------------------------------------------*/
+#utility-nav #country-selector, #utility-nav #global-search {
+  /*display: none !important;*/
+}
+
+/*---------------------------------------------------
+    Temporarily Adding Utility Bar Image
+---------------------------------------------------*/
+/*#main-nav {
+  background: #e8e8e8 url(../../../../utility-bar.jpg) no-repeat 50% 0;
+}*/
+
+/* fixing for IE7 */
+#global-header {position:relative; z-index: 20;}
+.tabbed-content {position:relative; z-index: 4;}
+
+/* reset for whitefox */
+body { background: none; } /* remove old black header bar */
+.span-24.breadcrumb { margin-top: 0; } /* legacy container for U.S. Search: domain/search/generalResults.faces */
+/*#nav-container { height: 0; display: none;}*/ /* remove old black header bar within legacy container */
+#payment, #payment img { display: none; height: 0; } /* override right-aligned e-commerce icons */
+
+
+#global-header-wrapper h1, #global-header-wrapper h2, #global-header-wrapper h3, 
+#global-header-wrapper p, #global-header-wrapper a, #global-header-wrapper em,
+#global-header-wrapper img, #global-header-wrapper small, #global-header-wrapper strong,
+#global-header-wrapper sub, #global-header-wrapper sup, #global-header-wrapper ul, #global-header-wrapper li,
+#global-header-wrapper fieldset, #global-header-wrapper form, #global-header-wrapper label,
+#global-footer h5, #global-footer p, #global-footer a, #global-footer em,
+#global-footer img, #global-footer small, #global-footer strong,
+#global-footer sub, #global-footer sup, #global-footer ul, #global-footer li,
+#global-footer fieldset, #global-footer form, #global-footer label {
+  margin: 0; padding: 0;
+  border: 0; outline: 0;
+  vertical-align: top;
+}/* eo: reset for whitefox */
+@font-face {
+  font-family: 'OpenSansBold';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-bold-webfont.woff') format('woff'),
+       url('../fonts/opensans-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans-regular-webfont.woff') format('woff'),
+       url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+#global-header-wrapper {
+  width: 100%; /* transparent background to support full bleed images */
+  padding-top: 10px; 
+}
+#global-header-wrapper .row { margin-bottom: 0; }
+#global-header {              margin: 0 auto 15px auto; }
+#global-logo {float:left; }
+  #global-logo h1 { font: inherit; }
+  #global-logo h1 a {
+    background: 0 0 no-repeat url("../images/navigation-global/garmin_logo_on_w.png");
+    float: left; width: 120px; height: 40px; display:block; text-indent: -5500px;
+  }
+/* font sizes for the global menus */
+  #header-primary-nav h2 {                              font-size: 20px; }
+  #header-primary-nav form label,
+  #header-primary-nav h3 {                              font-size: 14px; }
+  #header-primary-nav h2 span,
+  #header-primary-nav .dropdown div  {                  font-size: 12px; }
+  #header-primary-nav .dropdown.w-icon div li,
+  #global-nav-utility-tier li {                         font-size: 14px; }
+  #header-primary-nav .dropdown div li,
+  #header-primary-nav .dropdown.w-icon div li span {    font-size: 12px; }
+#header-primary-nav {
+  margin-top: 5px;
+  float: right; width: 800px; height: 50px;  /* primary navigation */
+}
+#header-primary-nav a:hover {
+  cursor: pointer;
+}
+#global-nav-primary-tier { float: right; }
+  #global-nav-primary-tier > ul li {
+    margin-left: 5px; margin-right: 5px;
+  }
+#header-primary-nav .dropdown h3 {
+  text-align: left;
+  letter-spacing: -0.8px;
+  line-height: 26px;
+}
+#header-primary-nav h2, #header-primary-nav h3,
+#global-header #header-primary-nav .w-icon li a {
+  font-family: 'OpenSansBold', 'HelveticaNeue', 'HelveticaNeueu', Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+}
+#header-primary-nav h2 span,
+#header-primary-nav .dropdown li a,
+#global-header #header-primary-nav .w-icon a span {
+  font-family: 'OpenSansRegular', 'HelveticaNeue', 'HelveticaNeueu', Arial, sans-serif;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+}
+#header-primary-nav .w-icon li a { font-weight: normal; }
+#global-footer h5, #global-footer a, .global_override li {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;  
+  font-weight: normal;
+}
+#global-footer h5, #global-footer li {
+  letter-spacing: -0.045em;
+}
+#header-primary-nav h2 {
+  line-height: 100%;
+}
+  html body div.global_override a, html body div.global_override a:visited {
+    color: #555;
+    text-decoration: none;
+    border-bottom: none;
+  }
+  #header-primary-nav li { 
+    line-height: 0;
+    list-style-type: none;
+  }
+  #global-nav-primary-tier > ul li {
+    display: block;
+    float: left;
+    text-align: left;
+  }
+  #header-primary-nav li.has-menu ul li { float: none; }
+  #header-primary-nav li h2 { /* parent "tab" to dropdown */
+    padding: 0 8px 0 10px; /* the x-padding could be debugged on li and h2 eventually */
+    display: inline-block;
+    /* text-transform: uppercase;*/
+    text-shadow: none;
+      -moz-text-shadow: none;
+      -webkit-text-shadow: none;
+  }
+    #header-primary-nav li h2 span {
+      display: block; 
+      float: none;
+      font-weight: 400;
+      text-transform: none;
+      line-height: 26px; margin: 0px;
+    }
+    #header-primary-nav h2 a, #header-primary-nav { color: #222; }
+    #header-primary-nav #global-nav-primary-tier > ul li h2:hover a,
+    #header-primary-nav #global-nav-primary-tier > ul li h2:hover a span,
+    body #global-header-wrapper #global-nav-primary-tier > ul li.active-navigation h2 a,
+    #global-nav-primary-tier > ul li.active-navigation h2 span { 
+      color: #007cc3; /* official Garmin blue */
+      text-decoration: none;
+    }
+    li.has-menu div.dropdown { display: none; }
+    li.has-menu div.dropdown.active-navigation { display: block; }
+    div.dropdown {  /* child menu */
+      clear: left;
+      position: absolute; top: 50px; z-index: 5000;
+      width: 790px;
+      border: 1px solid #cecece;
+      -webkit-border-radius: 4px;
+         -moz-border-radius: 4px;
+              border-radius: 4px;
+      padding: 10px 0;
+      background: #fefefe;
+      box-shadow: inset 0 -25px 4.35em #eee,
+        0 1px 0.15em #aaa;
+        -moz-box-shadow: inset 0 -25px 4.35em #eee,
+            0 1px 0.15em #aaa;
+        -webkit-box-shadow: inset 0 -25px 4.35em #eee,
+          0 1px 0.15em #aaa;
+    }
+      li#primary-explore div.dropdown {  left: -330px; }
+      li#primary-devices div.dropdown {  left: -355px; }
+      li#primary-maps-etc div.dropdown { left: -455px; }
+      li#primary-support div.dropdown {  left: -679px; }
+      #header-primary-nav .w-icon li a {
+        letter-spacing: -0.8px;
+        line-height: 20px;
+      }
+        #header-primary-nav .w-icon ul li a span {
+          font-weight: 400;
+          line-height: 18px;
+        }
+      #header-primary-nav .w-icon a:hover,
+      #header-primary-nav a:hover {
+        color: #007cc3; /* official Garmin blue */
+        text-decoration: none;
+      }
+	  #header-primary-nav #menu-devices a:hover{text-decoration: underline;}
+      #header-primary-nav div.w-icon div { width: 100%; }
+      #header-primary-nav div.w-icon ul { width: 950px; }
+      #header-primary-nav div.w-icon div ul li { 
+	    width: 245px;
+        margin-left: 10px; margin-right: 10px;
+      }
+      #header-primary-nav div.w-icon div ul li:nth-of-type(4), 
+      #header-primary-nav div.w-icon div ul li:nth-of-type(5),
+      #header-primary-nav div.w-icon div ul li:nth-of-type(6),
+      #header-primary-nav div.w-icon div ul li:nth-of-type(7),
+      #header-primary-nav div.w-icon div ul li:nth-of-type(8),
+      #header-primary-nav div.w-icon div ul li:nth-of-type(9) { margin-top: 10px; }
+      #header-primary-nav div#menu-support div ul li { margin-top: 0; }
+      div#header-primary-nav #global-nav-primary-tier div.w-icon li.first { margin-left: 0; }
+      div#header-primary-nav #global-nav-primary-tier div.w-icon li.last { margin-right: 0; }
+      .dd-arrow {
+        /* In Internet Explorer, The"border-style: dashed" will never be
+         * rendered unless "(width * 5) >= border-width" is true.
+         * Since "width" is set to "0", the "dashed-border" remains
+         * invisible to the user, which renders the border just like how
+         * "border-color: transparent" renders.
+         */
+        /*display: -moz-inline-box;*/
+        display: block;
+        display: none;
+        border-style: dashed;
+        border-color: transparent;
+        border-width: 0.93em;
+        font-size: 20px; /* Use font-size to control the size of the arrow. */
+        height: 0px; line-height: 0em;
+        vertical-align: middle;
+        width: 0px;
+        border-bottom: 1em solid #222;
+        position: absolute; 
+        top: 25px; 
+        left: 0px; 
+        /*bottom: -0.9em;*/
+      }
+      .ie7 .dd-arrow {margin-top: 47px;}
+      .ie8 .dd-arrow {top: 23px;}
+      .dd-arrow.active-navigation { /*visibility: visible;*/ display:block;}
+      #primary-devices .dd-arrow {  left: 0; }
+    #header-primary-nav li.has-menu {
+      position: relative; 
+      border-top-left-radius: 4px;
+        -moz-border-radius-topleft: 4px;
+        -webkit-border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+      border: 1px solid transparent;
+    }
+#header-primary-nav .w-icon div {
+  float: left; width: 150px; 
+}
+  #header-primary-nav .dropdown div.first h3,
+  #header-primary-nav .dropdown div.first ul {   padding-left: 15px; }
+  #header-primary-nav .dropdown div.last h3,
+  #header-primary-nav .dropdown div.last ul {    padding-right: 15px; }
+#header-primary-nav .mega ul {                   margin-bottom: 15px; }
+  #header-primary-nav .mega div#water-links ul { margin-bottom: 0; }
+#header-primary-nav .dropdown li a {
+  display: block;
+  padding: 0;  margin-left: 0; margin-right: 0;
+  line-height: 22px;
+  background: transparent url("../images/navigation-global/icon-sprites/default.png") 0 0 no-repeat;
+  /* Icon sprites courtesy:
+     @yummygum. Thanks to Leon & Vince!! More info @ yummygum.com
+     Pictos by Drew Wilson, more info @ pictos.cc */
+}
+  #header-primary-nav .w-icon div li a {
+    text-indent: 43px;
+    height: 40px; overflow: hidden;
+  }
+  #header-primary-nav .w-icon#menu-support li a {
+    display: block;
+    line-height: 36px; /* visual adjustment: no callouts for this menu */
+  }
+  #header-primary-nav .mega li {
+	display: block;
+    margin-left: 0; margin-right: 0;	 
+  }
+  #header-primary-nav .mega div li a {
+    background: none;
+    text-indent: 0;
+  }
+/* 01. explore menu */
+#header-primary-nav #road-link a {          background-position: 0 0; } 
+  #header-primary-nav #road-link a:hover {    background-position: 0 -40px; }
+#header-primary-nav li#sports-link a {        background-position: 0 -80px; }
+   #header-primary-nav #sports-link a:hover { background-position: 0 -120px; }
+#header-primary-nav #trail-link a {           background-position: 0 -160px; }
+   #header-primary-nav #trail-link a:hover {  background-position: 0 -200px; }
+#header-primary-nav #go-link a {              background-position: 0 -240px; }
+    #header-primary-nav #go-link a:hover {    background-position: 0 -280px; }
+#header-primary-nav #water-link a {           background-position: 0 -320px; }
+   #header-primary-nav #water-link a:hover {  background-position: 0 -360px; }
+#header-primary-nav #air-link a {             background-position: 0 -400px; }
+   #header-primary-nav #air-link a:hover {    background-position: 0 -440px; }
+/* 02. maps + accessories menu */
+#header-primary-nav #maps-link a {                background-position: 0 -480px; } 
+  #header-primary-nav #maps-link a:hover {        background-position: 0 -520px; }
+#header-primary-nav #accessories-link a {         background-position: 0 -560px; }
+  #header-primary-nav #accessories-link a:hover { background-position: 0 -600px; }
+#header-primary-nav #extras-link a {              background-position: 0 -640px; }
+  #header-primary-nav #extras-link a:hover {      background-position: 0 -680px; }
+/* 04. support menu */
+#header-primary-nav #reg-link a {                     background-position: 0 -720px; }
+  #header-primary-nav #reg-link a:hover {             background-position: 0 -760px; }
+#header-primary-nav #software-link a {                background-position: 0 -800px; }
+  #header-primary-nav #software-link a:hover {        background-position: 0 -840px; }
+#header-primary-nav #manuals-link a {                 background-position: 0 -880px; }
+  #header-primary-nav #manuals-link a:hover {         background-position: 0 -920px; }
+#header-primary-nav #faqs-link a {                    background-position: 0 -960px; }  
+  #header-primary-nav #faqs-link a:hover {            background-position: 0 -1000px; }    
+#header-primary-nav #repair-link a {                  background-position: 0 -1040px; }  
+  #header-primary-nav #repair-link a:hover {          background-position: 0 -1080px; }
+#header-primary-nav #warranty-link a {                background-position: 0 -1120px; }        
+  #header-primary-nav #warranty-link a:hover {        background-position: 0 -1160px; }        
+#header-primary-nav #learning-center-link a {         background-position: 0 -1200px; }        
+  #header-primary-nav #learning-center-link a:hover { background-position: 0 -1240px; }        
+#header-primary-nav #contact-support-link a {         background-position: 0 -1280px; }
+  #header-primary-nav #contact-support-link a:hover { background-position: 0 -1320px; }
+  
+  #header-primary-nav .dropdown div li span { display: block; }
+  #header-primary-nav .has-menu .w-icon div ul li {
+    display: inline;
+    float: left;
+  }
+  #header-primary-nav .dropdown div a span { text-decoration: none; }  
+    #header-primary-nav .dropdown div li:last-child span {
+      padding-bottom: inherit;
+      border-bottom: none;
+    }
+    body div#global-header div#header-primary-nav div#global-nav-primary-tier .dropdown div a:hover span {
+      text-decoration: none;
+      color: #007cc3; /* official Garmin blue */
+    }
+#global-nav-primary-tier .dropdown li a {          color: #555; }
+#global-nav-primary-tier .dropdown ul li a:hover { 
+	color: #007cc3; /* official Garmin blue */ 
+	cursor: pointer;
+}
+div#global-footer {
+  width: 100%; clear: both; /* clear for good measure */
+  padding-top: 25px; padding-bottom: 25px;
+  margin-top: 25px;
+  border-top: 1px solid #dcdcdc;
+  text-align: left;
+}
+#global-footer a { color: #555; }
+#global-footer h5 {
+  font-size: 14px;
+  line-height: 16px;
+}
+#global-footer h5, #global-footer h5 a { color: #222; }
+  #global-footer h5 a { 
+    text-decoration: underline;
+  }
+  #global-footer h5 a:hover { color: #111; }
+#global-footer ul {
+  margin-top: 10px;
+}
+#global-footer p {
+	font-size: 12px;
+  text-align: center;
+}
+#global-footer li { 
+	font-size: 12px;
+	list-style-image: none;
+	list-style-type: none;
+}
+#global-footer li a { 
+  text-shadow: inset 0 -1px rgba(255,255,255,.3),
+    inset 1px 1px rgba(0,0,0,.6);
+  -moz-text-shadow: inset 0 -1px rgba(255,255,255,.3),
+    inset 1px 1px rgba(0,0,0,.6);
+  -webkit-text-shadow: inset 0 -1px rgba(255,255,255,.3),
+    inset 1px 1px rgba(0,0,0,.6);
+}
+#global-footer #signoff {
+  margin-top: 10px;
+  text-align: center;
+}
+  #global-footer #signoff img { margin-bottom: 5px; }
+  #global-footer #signoff div { margin-top: 10px; }
+#global-footer li, #global-footer #signoff p {
+  line-height: 20px;
+  color: #555;
+}  
+#global-footer ul li {
+  display:block;
+}
+  #global-footer #signoff p, #global-footer #signoff a  { 
+    vertical-align: baseline;
+    font-size: 10px; }
+  #global-footer li a:hover, #global-footer #signoff p a:hover {
+    border: none;
+    color: #007cc3; /* official Garmin blue */
+    text-decoration: underline;
+  }
+#global-footer:after, div.dropdown:after { 
+/* clearfix for the floats in the inner taxonomy */
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Fixes for various Garmin pages */
+#global-header-wrapper div.first { /*margin-top: 0; */}
+#global-header-wrapper #menu-devices .row div:first-child {/*margin-top: 20px;*/ }
+
+/* Fixes for various browsers */
+*:first-child+html #header-primary-nav .dropdown h3,
+*:first-child+html #header-primary-nav h2, 
+*:first-child+html #header-primary-nav h3,
+*:first-child+html #header-primary-nav h2 span,
+*:first-child+html #header-primary-nav .dropdown li a,
+*:first-child+html #global-footer h5, 
+*:first-child+html #global-footer li,
+*:first-child+html #header-primary-nav .w-icon li a {
+  letter-spacing: 0; /* fix IE7 kerning */
+}
+*:first-child+html .dd-arrow { top: -23px; }
+*:first-child+html .dropdown { border-color: #888; } /* darker border: no contrast from box-shadow */
+@-moz-document url-prefix() {
+  #header-primary-nav .dropdown h3,
+  #header-primary-nav h2, #header-primary-nav h3,
+  #header-primary-nav h2 span,
+  #header-primary-nav .dropdown li a,
+  #global-footer h5, #global-footer li,
+  #header-primary-nav .w-icon li a {
+    letter-spacing: 0;  
+  }
+}
+
+/* Inverted header+footer for visual exceptions */
+/*.reverse #global-logo h1 a {
+	background-image: url("../images/navigation-global/garmin_logo_on_k.png");
+}
+.reverse .dd-arrow { border-bottom-color: #111; }
+.reverse .dropdown {
+	border-color: #222;
+	background: #444;
+	box-shadow: inset 0 -25px 4.35em #222,
+      0 1px 0.15em #111;
+      -moz-box-shadow: inset 0 -25px 4.35em #222,
+          0 1px 0.15em #111;
+      -webkit-box-shadow: inset 0 -25px 4.35em #222,
+        0 1px 0.15em #111;
+} */
+.reverse #header-primary-nav h2 a, .reverse #header-primary-nav { color: #fff; }
+.reverse #header-primary-nav #global-nav-primary-tier > ul li h2:hover a,
+.reverse #header-primary-nav #global-nav-primary-tier > ul li h2:hover a span,
+.reverse body #global-header-wrapper #global-nav-primary-tier > ul li.active-navigation h2 a,
+.reverse #global-nav-primary-tier > ul li.active-navigation h2 span,
+.reverse #header-primary-nav .w-icon li:hover a,
+.reverse #header-primary-nav a:hover,
+.reverse body div#global-header div#header-primary-nav div#global-nav-primary-tier .dropdown div li:hover span a,
+.reverse #global-nav-primary-tier .dropdown ul li a:hover,
+.reverse #global-footer li a:hover,
+.reverse #global-footer #signoff p a:hover { }
+.reverse #global-footer h5, .reverse #global-footer h5 a { }
+.reverse #global-footer li, .reverse #global-footer #signoff p { }

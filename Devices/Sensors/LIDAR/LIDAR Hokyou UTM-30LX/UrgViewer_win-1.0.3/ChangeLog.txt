@@ -1,0 +1,13 @@
+2010-02-27	Satofumi KAMIMURA <satofumi@uers.sourceforge.jp>
+	* 1.0.2 released.
+
+2010-02-26	Satofumi KAMIMURA <satofumi@uers.sourceforge.jp>
+	* Fixed connection error if connected by Space-key used.
+	* Changed dragging scroll.
+
+2010-02-21	Satofumi KAMIMURA <satofumi@uers.sourceforge.jp>
+	* Fixed display at update intervals became 0.
+	* 1.0.1 released.
+
+2010-02-15	Satofumi KAMIMURA <satofumi@uers.sourceforge.jp>
+	* 1.0.0 released.

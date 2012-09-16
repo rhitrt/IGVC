@@ -1,0 +1,115 @@
+; touchkit_USB.inf
+;
+; Installation file (.inf) for the Touchkit device.
+;
+; (c) Copyright 2008 Inc. 
+;
+
+[Version]
+Signature="$Windows NT$"
+Provider=%TOUCHKIT%
+ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
+Class=Mouse
+CatalogFile=touchkit_USB.cat
+DriverVer=01/17/2008, 5.0.0.5017
+[SourceDisksNames]
+1 = %DiskId1%,,
+[DestinationDirs]
+DefaultDestDir   = 12
+DLLCopyFiles = 11
+;
+; Driver information
+;
+
+[Manufacturer]
+%TOUCHKIT%   = TouchkitMfg;
+
+[TouchkitMfg]
+%USB_UNIV_TOUCH%     = usb_univ_Inst, USB\VID_0EEF&PID_0001
+%USB_PROF_TOUCH%     = usb_univ_Inst, USB\VID_0EEF&PID_0002
+
+;
+; General installation section
+;
+
+;====================================================================
+;================= USB Touchscreen Section ==========================
+;====================================================================
+[usb_univ_Inst]
+AddReg=xtouch_AddReg
+; Copy the driver over
+CopyFiles=XCopyFiles_Drivers, DLLCopyFiles
+
+[xtouch_AddReg]
+;
+; File sections
+;
+
+
+[XCopyFiles_Drivers]
+xtouch.sys
+
+[DLLCopyFiles]
+;touchkitprop.dll
+;
+; Service Installation
+;
+[usb_univ_Inst.Services]
+AddService = xtouch, 0x00000002 , xtouch_Service_Inst, xtouch_EventLog_Inst
+; Install mouclass.sys from msmouse.inf
+Include=msmouse.inf
+Needs=MouClass.Services
+
+[usb_univ_Inst.HW]
+AddReg=usb_AddReg
+;DelReg=usb_DelReg
+
+[xtouch_Service_Inst]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 0                  ; SERVICE_ERROR_IGNORE
+LoadOrderGroup = Pointer Port
+ServiceBinary  = %12%\xtouch.sys
+
+[xtouch_EventLog_Inst]
+AddReg = xtouch_EventLog_AddReg
+
+[xtouch_EventLog_AddReg]
+HKR,,EventMessageFile,0x00020000,"%SystemRoot%\System32\IoLogMsg.dll;%SystemRoot%\System32\drivers\xtouch.sys"
+HKR,,TypesSupported,0x00010001,7
+
+[usb_AddReg]
+;HKR,,"BeepMode",0x00010003,1
+;HKR,,"MouseMode",0x00010003,0x00000000
+
+
+;
+; Source file information
+;
+[SourceDisksFiles]
+; Files for disk Touchkit Touchscreen Controller. Installation Disk #1 (Mouse)
+xtouch.sys = 1,,
+
+
+[Strings]
+
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+;
+; Localizable Strings
+;
+
+USB_UNIV_TOUCH  = "USB Touchscreen Controller(Universal)"
+USB_PROF_TOUCH  = "USB Touchscreen Controller(Professional)"
+RUNONCEKEYNAME = "Software\Microsoft\Windows\CurrentVersion\RunOnce"
+DiskId1 = "Touchkit. Driver Installation Disk(TouchScreen)"
+TOUCHKIT = "Touchkit"

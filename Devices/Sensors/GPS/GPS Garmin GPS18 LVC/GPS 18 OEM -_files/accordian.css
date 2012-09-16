@@ -1,0 +1,231 @@
+.jscom, .mix htcom   { color: #4040c2; }
+.com      { color: green; }
+.regexp   { color: maroon; }
+.string   { color: teal; }
+.keywords { color: blue; }
+.global   { color: #008; }
+.numbers  { color: #880; }
+.comm     { color: green; }
+.tag      { color: blue; }
+.entity   { color: blue; }
+.string   { color: teal; }
+.aname    { color: maroon; }
+.avalue   { color: maroon; }
+.jquery   { color: #00a; }
+.plugin   { color: red; }
+
+.basic  { width:20em; }
+
+.expandall {padding-right: 15px; border-right: 1px solid #aaa; margin-right: 10px;}
+.toggleheaddiv {margin-bottom: 20px;}
+.product-item {border-bottom: 1px solid #DADAD9; float:left; margin: 0px 0px 5px 0px; width: 100%; display:inline; padding: 0px 0px 5px 0px;}
+.section-products {padding: 0px; margin: 0px 0px 10px 20px;}
+.nav-additional {padding: 5px 0px 20px 0px;}
+
+#log { position:fixed; bottom: 0; right:1em; text-align:right; }
+#switch { position: fixed; bottom: 0; right: 15em; }
+
+.basic  {
+	width: 100%;
+}
+
+.nav-road {}
+.nav-water {border-left: 1px solid #ccc;}
+
+/*.basic div { background-color: #fff; margin-top:15px; }*/
+.basic h3 { margin-bottom:.2em; }
+.basic p {
+	border: none;
+	text-decoration: none;
+	width:600px;
+}
+.basic a {
+	color:#434649;
+	background:url(../m/g/bk-jqueryBarClose.jpg) no-repeat #fff;
+	cursor:pointer;
+	display:block;
+	padding:10px 5px 10px 35px;
+	margin-top: 0;
+	text-decoration: none;
+	font-family:"Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1em;
+	font-weight:700;
+}
+.basic a:hover {
+	color:#434649;
+	padding:10px 5px 10px 35px;
+	background:url(../m/g/bk-jqueryBarOpen.jpg) no-repeat #fff;
+}
+.basic a.selected {
+	color:#434649;
+	padding:10px 5px 10px 35px;
+	margin-bottom: 10px;
+	background:url(../m/g/bk-jqueryBarOpen.jpg) no-repeat #fff;
+}
+.basic div a {
+ background:none;
+ color: #0074d4;
+ cursor:pointer;
+ display:inline;
+ font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:1em;
+ font-weight:normal;
+ margin:0;
+ padding:0;
+ text-decoration:underline;
+}
+.basic div a:hover {
+ background:none;
+ color: #0074d4;
+ cursor:pointer;
+ display:inline;
+ font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:1em;
+ font-weight:normal;
+ margin:0;
+ padding:0;
+ text-decoration:none;
+}
+.basic div a:selected {
+ background:none;
+ color: #0074d4;
+ cursor:pointer;
+ display:inline;
+ font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:1em;
+ font-weight:normal;
+ margin:0;
+ padding:0;
+ text-decoration:none;
+}
+.basic .productListImage a {
+	color: none;
+	background:none;
+	padding:0;
+	margin: 0;
+	text-decoration: none;
+	border:none;
+	width: auto;
+	display: inline;
+}
+.basic .productListImage a:hover {
+	padding:0;
+	background:none;
+	width: auto;
+	display: inline;
+}
+.basic .productListImage a.selected {
+	padding:0;
+	background:none;
+	width: auto;
+	display: inline;
+}
+
+/*.alternate  { width:20em; }*/
+
+.alternate  { width: 100%; }
+
+/*.alternate div { background-color: #fff; margin-top:15px; }*/
+.alternate h3 { margin-bottom:.2em; }
+/*.alternate p {
+	border: none;
+	text-decoration: none;
+	width:600px;
+}*/
+.alternate a.section {
+	color:#434649;
+	background:url(../m/g/gr-plus.jpg) no-repeat #fff;
+	background-position: left center;
+	cursor:pointer;
+	display:block;
+	padding:5px 0px 5px 20px;
+	margin-top: 0;
+	text-decoration: none;
+	font-family:"Lucida Grande", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	font-weight:700;
+	clear:both;
+}
+.alternate a.section:hover {
+	color:#434649;
+	background:url(../m/g/gr-minus.jpg) no-repeat #fff;
+	background-position: left center;
+}
+.alternate a.section.selected {
+	color:#434649;
+	background:url(../m/g/gr-minus.jpg) no-repeat #fff;
+	background-position: left center;
+	clear:both;
+}
+/*.alternate div a {
+ background:none;
+ color: #0074d4;
+ cursor:pointer;
+ display:inline;
+ font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:1em;
+ font-weight:normal;
+ margin:0;
+ padding:0;
+ text-decoration:underline;
+}
+.alternate div a:hover {
+ background:none;
+ color: #0074d4;
+ cursor:pointer;
+ display:inline;
+ font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:1em;
+ font-weight:normal;
+ margin:0;
+ padding:0;
+ text-decoration:none;
+}
+.alternate div a:selected {
+ background:none;
+ color: #0074d4;
+ cursor:pointer;
+ display:inline;
+ font-family:"Lucida Grande","Trebuchet MS",Arial,Helvetica,sans-serif;
+ font-size:1em;
+ font-weight:normal;
+ margin:0;
+ padding:0;
+ text-decoration:none;
+}*/
+/*.alternate .productListImage a {
+	color: none;
+	background:none;
+	padding:0;
+	margin: 0;
+	text-decoration: none;
+	border:none;
+	width: auto;
+	display: inline;
+}
+.alternate .productListImage a:hover {
+	padding:0;
+	background:none;
+	width: auto;
+	display: inline;
+}
+.alternate .productListImage a.selected {
+	padding:0;
+	background:none;
+	width: auto;
+	display: inline;
+}*/
+
+.map { float:right; background-color:#e6e6e4; margin-left:10px; }
+.map img { padding:10px; margin-bottom:0px; }
+.map div img { padding:3px 0 0 5px; margin-bottom:0px; border:0; }
+.map a { text-decoration:underline;}
+.map div { text-align:right; padding:8px 10px 2px 0; }
+#featureTab li { margin-bottom:8px; list-style-type:disc; list-style-position:inside;}
+
+@media print {
+	.basic div, #navigation ul, #list2 dd, #list3 div{
+		display: block!important;
+		height: auto!important
+	}
+}

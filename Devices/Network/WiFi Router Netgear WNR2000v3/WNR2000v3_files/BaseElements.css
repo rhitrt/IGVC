@@ -1,0 +1,103 @@
+/* 
+============================================
+Basic Element Behavior
+============================================
+*/
+body 
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    min-width: 850px;
+    border: none;
+    font-family: Verdana, Arial, Sans-Serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    color: #333;
+    background-color: #d2d2d2;
+    background-attachment: fixed;
+    background-image: url(/euf/assets/images/netgear/images/backgrounds/body_bg.jpg);
+    background-repeat: repeat-x;
+}
+
+h1, h2, h3
+{
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    color: #666;
+}
+
+h1
+{
+    font-size: 15px;
+}
+
+h2
+{
+    font-size: 11px;
+}
+
+h3
+{
+    font-size: 13px;
+}
+
+p
+{
+    font-size: 10px;
+    line-height: 16px;
+}
+
+a:link, a:visited, a:link:active, a:link:hover, a:visited:hover
+{
+    color: #005FA9;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:link:active
+{
+    color: #005FA9;
+    text-decoration: underline;
+}
+
+a:link:hover, a:visited:hover
+{
+    text-decoration: underline;
+    color: Navy;
+}
+
+li
+{
+    list-style-image:url(/euf/assets/images/netgear/images/static/bullet_2gray.gif);
+}
+
+div 
+{
+    padding: 0px;
+}
+
+h2 a 
+{
+    font-weight: bold !important;
+    color: #666 !important;
+}
+
+a img
+{
+    text-decoration: none;
+    border: 0px;
+}
+
+img
+{
+    border-style: none !important;
+}
+
+.left6col li
+{
+    list-style-image: none;
+    line-height: 20px;
+}
