@@ -1,0 +1,9 @@
+ADPcontent0 = 
+ADPcontent1 = "<iframe src=\"videos/utube01.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent2 = "<iframe src=\"videos/utube02.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent3 = "<iframe src=\"videos/utube03.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent4 = "<iframe src=\"videos/utube04.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent5 = "<iframe src=\"videos/utube05.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent6 = "<iframe src=\"videos/utube06.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent7 = "<iframe src=\"videos/utube07.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"
+ADPcontent8 = "<iframe src=\"videos/utube08.html\" name=\"adpiframe\" id=\"adpiframe\" width=100% height=100% align=\"center\" Frameborder=\"0\" Scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\"></iframe>"

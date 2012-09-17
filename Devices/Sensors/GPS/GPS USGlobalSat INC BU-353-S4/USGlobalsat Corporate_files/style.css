@@ -1,0 +1,374 @@
+body{
+	color:#595959;
+	font-family:Verdana,Arial,Helvetica,sans-serif;
+	font-size:12px;	
+	background-color: #CCCCCC;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+}
+
+
+a:link {
+	color: #0066CC;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #0066CC;
+}
+
+a:active {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+	
+/* BEGIN DEMO STYLE 
+a{color:#348;text-decoration:none;outline:none;}
+a:hover{color:#67a;}
+.caption{font-style:italic;color:#887;}
+.demo{position:relative;margin-top:2em;}
+.gallery_demo{width:500px;margin:0 auto;}
+.gallery_demo li{width:68px;height:50px;border:3px;margin:2px;background:#ffffff;}
+.gallery_demo li div{left:240px}
+.gallery_demo li div .caption{font:italic 0.7em/1.4 georgia,serif;}
+
+#main_image{margin:auto;height:500px;width:500px;background:white;}
+#main_image img{margin-bottom:10px;}
+
+.nav{padding-top:15px;clear:both;font:80% 'helvetica neue',sans-serif;letter-spacing:3px;text-transform:uppercase;}
+
+.info{text-align:left;width:700px;margin:30px auto;}
+.info p{margin-top:1.6em;}
+	
+*/
+
+ul.dropmenu {
+	float: left;
+	margin: 0px; 
+	padding: 0px;
+	background:url(../images/navigation.png) repeat-x scroll 0 0 transparent;
+	display:block;
+	height:50px;
+}
+
+.dropmenu li a, .dropmenu li{
+	float: left;
+}
+.dropmenu li a:hover, .dropmenu li.open > a{
+	color: #0657AD;
+	background: #FFFFFF url(../images/gradient.png) repeat-x scroll 0 0;	
+}
+
+.dropmenu li{
+	list-style: none;
+	position: relative;	
+	top: 1px;
+}
+
+.dropmenu li span{
+	display: block;
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	background:url(../images/arrow_up.png) repeat-x scroll 0 0 transparent;
+}
+.dropmenu li a:hover span, .dropmenu li.open > a span{
+	background-image: url(../images/arrow_hover.png);	
+}
+
+.dropmenu li a, .dropmenu li div{
+	padding: 9px 30px 8px 15px;
+	text-decoration: none;
+	color: #FFF;
+	border-right:1px solid #4A779D;
+	text-transform:uppercase;
+}
+
+/* Submenu */
+.dropmenu li > ul, .dropmenu li > div {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	padding: 0px;
+	margin: 0px;
+	background:url(../images/gradient.png) repeat-x scroll 0 0 #FFFFFF;
+	border-bottom:1px solid #CCCCCC;
+}
+
+.dropmenu li:hover > ul, .dropmenu li:hover > div{
+	display: block;
+}
+
+.dropmenu li ul li, .dropmenu li ul li a{
+	float: none;	
+	color: #0657AD;
+	text-transform: none;
+	text-decoration: none;
+}
+
+.dropmenu li ul li{
+	_display: inline;	
+}
+
+.dropmenu li > div{
+	width: 200px;
+}
+
+.dropmenu li ul li a span{
+	background:url(../images/arrow_sub.png) repeat-x scroll 0 0 transparent;	
+}
+
+/* Sub submenu */
+
+.dropmenu li ul li a{
+	width: 150px;
+	display: block;	
+	border:1px solid #CCCCCC;
+	border-top: none;
+}
+
+.dropmenu li ul li a:hover{
+	color:#F67A00;
+	background: #F0F0F0;
+}
+
+.dropmenu li ul li ul, .dropmenu li ul li > div{
+	top: 0px;
+	left: 101%;
+}
+
+
+/*******************************************************
+Login form
+*******************************************************/
+.dropmenu li > div.login{
+	border:1px solid #CCCCCC;
+	width: 210px;	
+}
+.dropmenu li > div.login div{
+	border: none;
+}
+.login label{
+	display:block;
+	padding:0 0 4px;
+	color:#595959;	
+}
+.login input {
+	border:1px solid #4A779D;
+	margin-bottom:8px;
+	padding:3px 8px;
+	width:164px;
+}
+.login button {
+	background:url(../images/navigation.png) repeat-x scroll 0 0 #4A779D;
+	border:1px solid #4A779D;
+	color:#FFFFFF;
+	padding:4px 10px;
+	width:175px;
+}
+
+/*******************************************************
+Products div
+*******************************************************/
+.dropmenu li > div.products{
+	width: 285px;
+
+}
+.dropmenu li:hover > div.products ul{
+	display: block;
+}
+.dropmenu li > div.products *{
+	padding: 0px;
+	margin: 0px;
+	position: relative;	
+	border: none;
+}
+.dropmenu li > div.products li{
+	overflow: hidden;
+	padding: 10px 0px;
+	border-bottom:1px solid #CCCCCC;
+}
+.dropmenu li > div.products li img{
+	float: left;
+	margin:  0 15px;
+}
+.dropmenu li > div.products{
+	border:1px solid #CCCCCC;
+	color:#595959;
+}
+.dropmenu li > div.products ul li h2{
+	font-size: 16px;
+	margin: 0px;
+	padding: 2px 0 3px;
+}
+.dropmenu li > div.products ul li p{
+	color:#666666;
+	font-size:10px;
+	margin:0;
+	padding:0;
+}
+.dropmenu li > div.products ul li p a {
+	border:medium none;
+	color:#666666;
+	display:inline;
+	margin:0;
+	padding:0;
+	text-transform:none;
+	background: none;
+}
+.dropmenu li > div.products ul{
+	padding: 0px;
+	margin: 0px;	
+}
+.dropmenu li > div.products ul li p a:hover {
+	color:#222;
+	text-decoration: none !important;
+}
+.dropmenu li > div.products .small{
+	padding: 15px;
+	color:#595959;
+	font-size: 9px;
+	text-transform: none;
+}
+
+/*******************************************************
+Tutorials div
+*******************************************************/
+.dropmenu li > div.tutorials *{
+	display: none;	
+}
+
+.PageFrame
+{width:1000px;margin:auto;position:relative;background-color:#fff;}
+
+.HeaderFrame
+{width:1000px;}
+
+.FooterFrame
+{
+    clear:both;
+    background:url(../images/bg_r4_c5.jpg) repeat-x scroll 0 0px;
+    position:relative;
+    width:1000px;
+    margin:auto;
+    /*margin-top:20px;    */
+}
+
+.FooterWrap
+{  
+    width:1000px;
+    height:30px;
+    margin:0px;
+    padding:0px;  
+    color:#FFFFFF;
+}
+.FooterLinks
+{width:575px;float:left;margin:6px 0px 0px 5px;color:#FFFFFF;}
+.FooterLogo
+{width:375px;float:right;color:#FFFFFF;}
+
+.FooterFrame .FooterWrap .FooterLinks .style13 {color: #FFFFFF;}
+
+.MenuFrame
+{width:1000px;height:35px;background:url(../images/navigation.png) repeat-x scroll 0 0px;}
+
+.MainContent
+{width:1000px;background-color:#FFFFFF;}
+
+.LeftColumn
+{float:left;width:205px;background-color:#FFFFFF;}
+
+.RightColumn
+{float:left;width:774px;padding-left:10px;padding-right:10px;background-color:#FFFFFF;border-left:1px solid #C7E2FF;}
+
+.clear
+{clear:both;}
+
+.top-narrow-blue-line{
+	border-top:1px solid #C5E1FF;
+}
+.link-red{
+	color:#EF0505;
+	text-decoration:none;
+}
+.link-red:hover{
+	text-decoration:underline;
+}
+.latest-news-date
+{margin-left:5px;margin-right:5px;color:#F10A13;font-size:0.9em;}
+
+.NewsHeadline 
+{margin-left:5px;margin-right:5px;color:#0000cc;font-size:10px;font-weight:bold;}
+
+.divNewProducts
+{width:205px;margin-left:25px;}
+
+/*******************************************************
+Videos div
+*******************************************************/
+
+* { margin: 0; padding: 0; }
+			
+			h4 { margin: 15px 0 5px 0; }
+			
+			h4, p { font-size: 1.2em; }
+						
+			.wide {
+				border-bottom: 1px #000 solid;
+				width: 4000px;
+}
+
+
+div#sign_up_box {
+width: 200px;
+background-color: #ffffff;
+margin: 0 auto;
+border: 4px solid #f1f1f1;
+}
+div#sign_up_title {
+margin: 2px;
+color: #d23509;
+background-color: #daecff;
+font-weight: bold;
+padding: 3px;
+text-align: center;
+}
+div#sign_up_content {
+padding: 5px;
+overflow: hidden;
+}
+label#sign_up_email_address_label {
+font-size: 12px;
+font-weight: bold;
+}
+input#sign_up_email_address {
+width: 100%;
+}
+input#sign_up_button {
+clear: both;
+float: right;
+margin: 5px 0 3px;
+}
+div#sign_up_footer {
+font-size: 10px;
+color: #d23509;
+padding: 0px;
+background-color: #f1f1f1;
+text-align: center;
+color: #6b6b6b;
+}
+div#sign_up_footer a:link, div#sign_up_footer a:visited {
+color: #6b6b6b;
+text-decoration: none;
+}
+div#sign_up_footer a:hover {
+text-decoration: underline;
+}

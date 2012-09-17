@@ -1,0 +1,20 @@
+/* Advanced DHTML Popup (optional) css file for the title style */ 
+
+#default_adpTitle{
+  font: bold 12pt arial;
+  color: #4182B8;
+  text-align: center;  
+	background-color: #cccccc;
+	/*background:url(someimage.gif) top left repeat-x;*/
+}
+
+#template02_adpTitle{
+  font: bold 11pt arial;
+  color: #fd9500;
+  text-align: left;
+	background-color: #cccccc;
+	/*background:url(someimage.gif) top left repeat-x;*/
+}
+
+
+

@@ -1,0 +1,12 @@
+#ADPMask {
+  opacity: .4;
+  filter: alpha(opacity=40);
+  background-color: #444444;
+} 
+
+#ADPMask_opera {
+  opacity: .8;
+  background-image: url('ADPMask.png');
+  background-repeat: repeat; 
+  background-color:transparent;
+}

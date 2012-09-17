@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0064)http://www.usglobalsat.com/store/gpsfacts/bu353s4_gps_facts.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>BU-353-S4 GPS FAQ's</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+-->
+</style>
+<style type="text/css"></style></head>
+
+<body class="style1">
+<p align="center"><strong><span class="style1">BU-353-S4</span></strong><br>
+<strong>USB GPS FAQ</strong></p>
+<p>1.) Q: What chipset is my BU-353-S4 using?</p>
+<p>1.) A: SiRF Star IV</p>
+<p>&nbsp;</p>
+<p>2.) Q: Is this device WAAS enable? </p>
+<p>2.) A: Yes, the BU-353-S4  serial GPS receiver is WAAS enabled by default, it was sold by USGlobalSat, Inc and its Authorized Dealers.</p>
+<p>&nbsp;</p>
+<p>3.) Q: How important is having WAAS enabled on your GPS receiver? </p>
+<p>3.) A: It provides better accuracy up to 3m</p>
+<p>&nbsp;</p>
+<p>4.) Q: What satellite identification number is used for WAAS and EGNOS?</p>
+<p>4.) A: Satellite #33 (AoRE) is for EGNOS, Satellite #35 (AoRW) is for WAAS, and it has been suggested that Satellite #41 (PoR) will be used to indicate that data is being received from the Japanese MSAS system.</p>
+<p>&nbsp;</p>
+<p>5.) Q: What datum is used? </p>
+<p>5.) A: WGS 84 </p>
+<p>&nbsp;</p>
+<p>6.) Q: Is the BU-353 device waterproof? </p>
+<p>6.) A: Yes, IPX6. </p>
+<p>&nbsp;</p>
+<p>7.) Q: What's the refresh rate? </p>
+<p>7.) A: GGA(1sec), GSA(5sec), GSV(5sec), RMC(1sec) </p>
+<p>&nbsp;</p>
+<p>8.) Q: What is the output format for this receiver? </p>
+<p>8.) A: Output format: GGA(1sec), GSA(5sec), GSV(5sec), RMC(1sec),( VTG and GLL are optional) </p>
+<p>&nbsp;</p>
+<p>9.) Q: How many satellites are needed for 3-D positioning? </p>
+<p>9.) A: A minimum of 4 satellites.</p>
+<p>&nbsp;</p>
+<p>10.) Q: Can I reconfigure receiver? If so, what program? </p>
+<p>10.) A: Yes. SirfDemo programming utility. Note, custom settings are temporary until the receiver has exhausted both the internal Super-Cap.  Then the receiver will revert back to its original default settings.</p>
+<p>&nbsp;</p>
+<p>11.) Q: Can I reconfigure receiver's Baud-Rate? If so, what program? </p>
+<p>11.) A: Yes. SirfDemo programming utility. Note, custom settings are temporary until the receiver has exhausted both the internal Super-Cap.  Then the receiver will revert back to its original default settings.</p>
+<p>&nbsp;</p>
+<p>12.) Q: Can I reconfigure receiver's NMEA data? If so, what program? </p>
+<p>12.) A: Yes. SirfDemo programming utility. Note, custom settings are temporary until the receiver has exhausted both the internal Super-Cap.  Then the receiver will revert back to its original default settings.</p>
+<p>&nbsp;</p>
+<p>13.) Q: Lately it takes too long to lock the satellites. Sometimes it took as long as 7-9 minutes (solid green LED). Environment: highway, no high trees and buildings. What can I do to correct this?</p>
+<p>13.) A: Under GPSInfo application select a ìCold Startî to reset receiverís registers. </p>
+<p>&nbsp;</p>
+<p>14.) Q: Why am I not getting any or very weak GPS signals even though my GPS receiver is directly under the windshield glass? </p>
+<p>14.) A: Certain vehicles may be equipped with special windshields that contain metal in the glass that prevents GPS and RF signals from being received properly. Customers with these types of windshields must use an exterior GPS antenna for improved results for GPS applications. If you are unsure about whether your vehicle has one of these types of windshields, contact your dealer and request more information. </p>
+<p>&nbsp;</p>
+<p>15.) Q: What platforms are supported? </p>
+<p>15.) A: Windows/ WinCE/ Mac OS X/ Linux </p>
+<p>&nbsp;</p>
+<p>16.) Q: What is the recommended maximum cable length for wired GPS devices? USB? Serial? </p>
+<p>16.) A: We recommend 1.5m (4.92 ft.)/ 3m (9.84 ft.) cable length for USB/ Serial GPS device. Greater the cable length , less sensitivity quality.</p>
+<p>&nbsp;</p>
+<p>17.) Q: Once set. Is SiRF Binary Protocol a permanent configuration? </p>
+<p>17.) A: These settings are temporary. </p>
+<p>&nbsp;</p>
+<p>18.) Q:What can I do to prevent my device from having GRMC NMEA time stamp data problem?</p>
+<p>18.) A: There is backed battery for SRAM and RTC (Real-Time Clock) to keep last stored position , date ,time , satellite data. When you power down GPS , backed battery will keep the last data. It can help us to achieve maximum acquisition performance. After a long period of time(about 4 hours, depend on different products) GPS is power off, backed battery will run out and last stored data will lose. When you re-start GPS, last stored data display at first if backed battery is still active. If backed battery is inactive , default parameters will display. Only after new GPS signals are received , correct data will display. It can explain why incorrect date display at first. In short ,  the receiver requires GPS data to update these parameters. </p>
+<p>&nbsp;</p>
+<p>19.) Q: Does the current USB driver support Mac OS X Snow Leopard? </p>
+<p>19.) A: Yes it does.</p>
+<p>&nbsp;</p>
+<p>20.) Q: What's the unit's current draw? </p>
+<p>20.) A: Typically 55mA. </p>
+<p>&nbsp;</p>
+<p>21.) Q: What's the TX/ RX voltage? </p>
+<p>21.) A: The voltage ratings are set to 5VDC.</p>
+<p>&nbsp;</p>
+<p>22.) Q: Will my receiver support older NMEA standards? </p>
+<p>22.) A: Yes, NMEA 2.0 is backwards compatible with older versions of the protocol. NOTE:  If your map software (such as Street Atlas 5) requires data sentence GGA, and your GPS (such as the Magellan 3000) does not output GGA, then they will NOT work together. </p>
+<p>&nbsp;</p>
+<p>23.) Q: My device is not being detected by my software using Windows platform. What troubleshooting steps do I take?</p>
+<p>23.) A:</p>
+<p>A. First, connect the GPS receiver to your USB port.</p>
+<p>B. Second, from your START button, open CONTROL PANEL &gt; SYSTEM &gt; HARDWARE &gt; DEVICE MANAGER. </p>
+<p>C. Third, if a question mark or yellow error icon is displayed in the "PORTS (COM&amp;LPT)" or "DEVICES/USB&lt;-&gt;Serial" headings, this is an indication that no drivers are currently installed for the GPS receiver.</p>
+<p>&nbsp;</p>
+<p>For installation instructions refer to your product CD-ROM.If the driver was shown already loaded, you would see "Prolific USB-to-Serial Comm Port (COM X)" under the "PORTS (COM&amp;LPT)" section. This is your USB GPS assigned COM Port number to use when configuring any utility or map program to access the GPS data. </p>
+<p>Be sure your GPS map or utility program has been configured to read the assigned COM port.</p>
+<p>&nbsp;</p>
+<p>You may download USB drivers from the product or support page</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>ONLY IF A COM PORT WAS ASSIGNED TO THE PROLIFIC DRIVER AND YOUR GPS PROGRAM WAS CONFIGURED TO READ THE CORRECT COM PORT,</p>
+<p>AND YOU STILL CANNOT GET GPS DATA, continue with these steps:. </p>
+<p>1. From the START button select CONTROL PANEL &gt; ADD or REMOVE PROGRAMS. </p>
+<p>2. Select "PL-2303 USB-to-Serial" from the program list. </p>
+<p>3. Click on the REMOVE BUTTON</p>
+<p>4. RE-BOOT your computer</p>
+<p>5. Now re-install the Prolific driver for your USB GPS wither from the CD-ROM or the downloaded file from our web-site.</p>
+<p>6. Re-Boot your computer and follow the steps "A" through "C" in the GPS Driver Verification section above.</p>
+<p>&nbsp;</p>
+<p>GPS Test Utility</p>
+<p>In the next stage, a GPS test application will be downloaded and used to view the receiver's activity or can be compare with your current loaded mapping application. </p>
+<p>This GPS Info program utility will provide you with viewable GPS data information needed for full receiver functionality validation. </p>
+<p>You may visit our support webpage and download this utility here.</p>
+<p>&nbsp;</p>
+<p>- First, launch  the GPS Info program this will display the Setup page. </p>
+<p>- Then from the drop down menu list, select the COM port and enter your computers ASSIGNED COM PORT NUMBER as found in the DEVICE MANAGER.</p>
+<p>- The Baud Rate should be set to 4800bps. </p>
+<p>&nbsp;</p>
+<p>Almost instantaneously, NMEA raw data strings will be display at a rate of one second intervals below the configuration settings indicate your GPS driver has been </p>
+<p>successfully installed and configured.  This GPS Info utility also can provide the user with satellite visibility and blue graphical signal strength representation from real-time satellites synchronization. Note: Three satellites are required for two dimension positioning (Latitude and Longitude).  Four satellites are required for three-dimension positioning (Latitude, Longitude and Altitude).</p>
+<p>&nbsp;</p>
+<p>24.) Q: My device is not being detected by my software using Macintosh platform. What troubleshooting steps do I take?</p>
+<p>24.) A:</p>
+<p>In the initial stage, you need to identify if the appropriate drivers were loaded correctly. Two good sources to determine that your device's driver are properly installed are in System Profiler and System Preferences in the Operating System. A full description of instructions of how to access this handy information is provided below.</p>
+<p>&nbsp;</p>
+<p>First, shut your computer down, connect GPS receiver to your USB port and boot your Macintosh computer. </p>
+<p>Second, access the System Profiler utility. Select the apple icon on the top left hand side of the Apple menu. Then, select the following ìAbout This Macî-&gt;îMore InfoÖî-&gt; Hardware-&gt;USB to display deviceís detection. Under USB Device Tree, you will view ìUSB Deviceî this pertains to your GPS USB receiver. Driver information can be found under USB Device window. Vendor Name, Speed, Product ID, and Bus (mA) will be provided. </p>
+<p>If no information is provided, this is an indication that no drivers are currently installed for this device to operate properly.</p>
+<p>&nbsp;</p>
+<p>Finally, under System Preferences, select Network, Show, and Network Port Configurations. Your device will appear as a ìusbserialî device in the Port Configurations box.This completes and confirms that your GPS USB drivers are fully installed and operational.</p>
+<p>&nbsp;</p>
+<p>GPS Test Utility</p>
+<p>In the next stage, a GPS test application will be downloaded and used to view the receiver's activity or can be compare with your current loaded mapping application. This GPS Utility will provide you with viewable GPS data information needed for full receiver functionality validation.</p>
+<p>&nbsp;</p>
+<p>First, launch  the GPS Utility program this will display GPS coordinate data.</p>
+<p>Select "Settings" from the selections, a small window will appear with Port, Rate and Units fields. Configure the application settings to the following:</p>
+<p>&nbsp;</p>
+<p>Port: /dev/cu.usbserial</p>
+<p>Rate: 4800</p>
+<p>Units: Miles</p>
+<p>&nbsp;</p>
+<p>Then you may re-select the "Settings" selection to close configurations window.</p>
+<p>Select "Monitor" from the selections, a small window will appear with raw NMEA data strings displayed across at a rate of less than one second intervals.</p>
+<p>Select "Satellites" a real-time window satellite information can be viewed. Within two-minute window period, your first GPS fix should be acquired. This Satellites window will provide the user with real-time satellite visibility and green graphical signal strength representation from real-time satellites synchronization data. Note: Three satellites are required for two dimension positioning. Two dimension positioning reports position only. Four satellites are required for three-dimension positioning, that is to say position and elevation.</p>
+<p>&nbsp;</p>
+<p>If you are still having issues, try reinstalling the driver by going to your System/Library/Extensions folder and search for "ProlificUsbSerial.kext" and delete that file. Make sure the BU-353-S4 is unplugged and restart your computer. Then after the restart, reinstall the driver. After the install, it will ask you to restart the computer again. You can reference this document on how to install the driver (http://www.usglobalsat.com/download/57/br355_gps_mac_v2.0.pdf).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>After your computer is restarted, then plug in the BU-353-S4 and use our GPS Utility to test your BU-353-S4</p>
+<p>&nbsp;</p>
+<p>25.) Q: What is static navigation? </p>
+<p>25.) A: Static navigation when enable, velocities lower than 1.2 m/s for 3 seconds we will freeze the position, and leave them frozen until velocity exceeds 1.4 m/s. Static navigation is a mode designed for motor vehicles, which causes the position to become pinned at one location when velocity is determined to be low enough. This is designed to make navigation systems operate more reasonably when the GPS Selective Availability (SA) signal degradation is turned on. </p>
+<p>&nbsp;</p>
+<p>26.) Q: What is trickle mode? </p>
+<p>26.) A) The Trickle mode allows for an increase in battery life by putting the GPS module in sleep mode for very short periods of time, such as 300ms per 1s cycle, which will result in a battery life increase of about 40% according to my testing. It can be useful for certain types of applications but there is a hit on performance as the receiver will have to get "back on its feet" when it wakes up. It is especially problematic in difficult reception conditions. Starting with FW 2.3, SiRF has added the "Adaptive Trickle" mode, which as its name implies will adapt the power savings to the conditions of reception. In optimal conditions, I found that the battery life increase amounts to about 30%.</p>
+<p>&nbsp;</p>
+<p>27.) Q: Can I alter the GPS datum?</p>
+<p>27.) A: Unfortunately, you cannot alter the GPS datum.</p>
+<p>&nbsp;</p>
+<p>28Q) Is the BU-353-S4 Compatible with an Android Phone/Tablet?</p>
+<p>28A) Android has the built-in drivers for our USB GPS Receivers in it's Linux kernel (PL2303), but unfortunately, we do not know how to get it working on Android, because there's no mechanism in the Android OS to receive GPS Data through a USB port (as explained here: https://code.google.com/p/android-serialport-api/). I would suggest to visit the following forum for advice &amp; help with Android: http://forum.xda-developers.com/filter.php?cat=Android</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Also, if you are looking for a GPS receiver, maybe you'll be interested in one of our Bluetooth GPS receivers (http://www.usglobalsat.com/s-17-bluetooth.aspx) which will work with your Android device, but requires you to use our GPSInfo for Android app, which makes the external Bluetooth GPS receiver as your default GPS source.</p>
+<p>&nbsp;</p>
+<p>You can find it here: https://play.google.com/store/apps/details?id=com.globalsat.android.gps.bluetooth.provider</p>
+<p>&nbsp;</p>
+<p>29Q) I am getting the Blue Screen Of Death with my BU-353-S4. How can I resolve this issue?</p>
+<p>29A) Go to your device manager &amp; right click on "Prolific USB To Serial Comm Port (COM X)" &gt; go to Properties &gt; go to Port Settings &gt; go to Advanced &gt; slide both buffers to the very left &gt; then click OK &amp; test your device agian &amp; see if that helps.</p>
+<p>&nbsp;</p>
+<p>30Q) Do you have any API's or sample code I could use to develop my own software?</p>
+<p>30A) Our GPS receivers output the standard NMEA protocol, that sent to the computer via a COM port.</p>
+<p>&nbsp;</p>
+<p>So here is a sample of a NMEA library I found, perhaps this will help:</p>
+<p>&nbsp;</p>
+<p>http://sourceforge.net/projects/nmea/</p>
+<p>&nbsp;</p>
+<p>Also, here is the NMEA Protocol document:</p>
+<p> </p>
+<p>http://www.usglobalsat.com/store/downloads/NMEA_commands.pdf</p>
+<p>&nbsp;</p>
+<p>31Q) How do I check the Firmware version?</p>
+<p>31A) You can check the firmware by sending a cold start or initialization command to the GPS Module.</p>
+<p> </p>
+<p>Send this command:</p>
+<p>$PSRF101,0,0,0,0,0,0,12,4*10</p>
+<p>&nbsp;</p>
+<p>Or press Cold Start on GPSInfo (http://www.usglobalsat.com/store/downloads/GPSInfo.zip)</p>
+<p>&nbsp;</p>
+<p>You should receive something similar to this:</p>
+<p>$PSRFTXT,Version:GSW3.5.0_3.5.00.00-SDK-3EP2.01 *46</p>
+<p>$PSRFTXT,Version2:F-GPS-03-0904011*20</p>
+<p>&nbsp;</p>
+<p>32Q) How do I check if my BU-353-S4 is being detected by Linux?</p>
+<p>32A) You can send the following command in Terminal &amp; you should see the NMEA data streaming: </p>
+<p>&nbsp;</p>
+<p> stty -F /dev/ttyUSB0 ispeed 4800 &amp;&amp; cat &lt; /dev/ttyUSB0</p>
+<p>&nbsp;</p>
+<p>33Q) How do I reinstall the USB driver for Mac OSX 10.5 or below?</p>
+<p>33A) 1. Have your USB GPS device unplugged and open up your Hard Drive folder and go to System/Library/Extensions folder and search for "ProlificUsbSerial.kext" and delete that file and restart your computer. </p>
+<p>&nbsp;</p>
+<p>2. Then after the restart, reinstall the driver "PL2303_1.2.1r2.dmg" from ( http://www.usglobalsat.com/store/download/62/md_pl2303h_hx_x_dmg_v1.2.1r2.zip ), which is the USB driver for Mac OS 10.5.X. </p>
+<p>&nbsp;</p>
+<p>3. After the install, it will ask you to restart the computer again. </p>
+<p> </p>
+<p>4. You can reference this document on how to install the driver ( http://www.usglobalsat.com/store/download/57/br355_gps_mac_v2.0.pdf ).</p>
+<p> </p>
+<p>5. After your computer is restarted, then plug in the USB GPS Receiver and use our GPS Utility to test your USB GPS Receiver: ( http://www.usglobalsat.com/store/download/62/mac_gps_utility_v2.zip ).</p>
+<p> </p>
+<p>6. Configure the application settings to the following:</p>
+<p> </p>
+<p>Port: /dev/cu.usbserial</p>
+<p>Rate: 4800</p>
+<p>Units: Miles</p>
+<p>&nbsp;</p>
+<p>34Q) How do I reinstall the USB driver for Mac OSX 10.6 or 10.7?</p>
+<p>34A) 1. Have your USB GPS device unplugged and open up your Hard Drive folder and go to System/Library/Extensions folder and search for "ProlificUsbSerial.kext" and delete that file and restart your computer. </p>
+<p>&nbsp;</p>
+<p>2. After the restart, reinstall the driver "PL2303_1.4.0.dmg" from ( http://www.usglobalsat.com/store/download/62/osx_10_6_usb_drvr.zip ), which is the USB driver for Mac OS 10.6.X &amp; 10.7.X.</p>
+<p>&nbsp;</p>
+<p>3. After the install, it will ask you to restart the computer again. </p>
+<p> </p>
+<p>4. You can reference this document on how to install the driver ( http://www.usglobalsat.com/store/download/57/br355_gps_mac_v2.0.pdf ).</p>
+<p> </p>
+<p>5. After your computer is restarted, then plug in the USB GPS Receiver and use our GPS Utility to test your USB GPS Receiver: </p>
+<p>( http://www.usglobalsat.com/store/download/62/mac_gps_utility_v2.zip ).</p>
+<p> </p>
+<p>6. Configure the application settings to the following:</p>
+<p>&nbsp;</p>
+<p> </p>
+<p>Port: /dev/cu.usbserial</p>
+<p>Rate: 4800</p>
+<p>Units: Miles</p>
+<p>&nbsp;</p>
+<p>35Q) What are some common NMEA commands?</p>
+<p>35A) </p>
+<p>Enable WAAS/EGNOS - $PSRF151,01*0F</p>
+<p>Disable WAAS/EGNOS - $PSRF151,00*0E</p>
+<p>&nbsp;</p>
+<p>Enable GGA Output 1sec - $PSRF103,0,0,1,1*25</p>
+<p>Disable GGA Output - $PSRF103,0,0,0,1*24</p>
+<p>&nbsp;</p>
+<p>Enable GLL Output 1sec - $PSRF103,1,0,1,1*24</p>
+<p>Disable GLL Output - $PSRF103,1,0,0,1*25</p>
+<p>&nbsp;</p>
+<p>Enable GSA Output 5sec - $PSRF103,2,0,5,1*23</p>
+<p>Disable GSA Output - $PSRF103,2,0,0,1*26 </p>
+<p>&nbsp;</p>
+<p>Enable GSV Output 10sec - $PSRF103,3,0,10,1*16</p>
+<p>Disable GSV Output - $PSRF103,3,0,0,1*27</p>
+<p>&nbsp;</p>
+<p>Enable RMC Output 1sec - $PSRF103,4,0,1,1*21</p>
+<p>Disable RMC Output - $PSRF103,4,0,0,1*20</p>
+<p>&nbsp;</p>
+<p>Enable VTG Output 1sec - $PSRF103,5,0,1,1*20</p>
+<p>Disable VTG Output - $PSRF103,5,0,0,1*21</p>
+<p>&nbsp;</p>
+<p>Enable ZDA Output 1sec - $PSRF103,8,0,1,1*2D</p>
+<p>Disable ZDA Output - $PSRF103,8,0,0,1*2C </p>
+<p>&nbsp;</p>
+<p>Change Baud Rates (NMEA Protocol):</p>
+<p>&nbsp;</p>
+<p>4800/8/N/1 - $PSRF100,1,4800,8,1,0*0E</p>
+<p>9600/8/N/1 - $PSRF100,1,9600,8,1,0*0D</p>
+<p>19200/8/N/1 - $PSRF100,1,19200,8,1,0*38</p>
+<p>38400/8/N/1 - $PSRF100,1,38400,8,1,0*3D</p>
+<p>&nbsp;</p>
+<p>Other Commands:</p>
+<p>&nbsp;</p>
+<p>Enable Power Save Mode - $PSRF150,0,300,1000,1*10</p>
+<p>Disable Power Save Mode - $PSRF150,0,1000,1000,0*23</p>
+<p>&nbsp;</p>
+<p>Enable Development Data - $PSRF105,1*3E</p>
+<p>Disable Development Data - $PSRF105,0*3F</p>
+<p>&nbsp;</p>
+<p>Warm Start - $PSRF101,0,0,0,0,0,0,12,2*16</p>
+<p>Factory Reset - $PSRF101,0,0,0,0,0,0,12,8*1C</p>
+<p>&nbsp;</p>
+<p>Cold Start - $PSRF101,0,0,0,0,0,0,12,4*10</p>
+<p>&nbsp;</p>
+<p>36Q) GPSInfo on my Windows Vista/7 PC shows "No COM Port Find" or "COM port error", but my device is being detected by the Device Manager as "Prolific USB To Serial Comm Port (COM X)". How can I fix this?</p>
+<p>36A) You can fix GPSInfo by right clicking on the GPSInfo Icon on your desktop &gt; go to properties &gt; go to the "compatibility" tab &gt; check the box "Run this program as an adminstator" &gt; click OK &gt; then reopen GPSinfo.</p>
+<p>&nbsp;</p>
+<p>Or you can download the latest version of GPSInfo here: http://www.usglobalsat.com/store/downloads/GPSInfo.zip</p>
+<p>&nbsp;</p>
+<p>37Q) I am seeing strange characters being outputed on GPSInfo &amp; the red LED isn't on. How can I fix this?</p>
+<p>37A) Please follow these steps:</p>
+<p>1. Download and install this software: http://www.usglobalsat.com/store/downloads/SiRFDemo387.zip</p>
+<p> </p>
+<p>2. Run the Sirf Demo software.</p>
+<p>&nbsp;</p>
+<p>3. Connect your device, choose the correct COM port, and select the 4800 baud rate.</p>
+<p>&nbsp;</p>
+<p>4. Go to Action &gt; Open Data Source.</p>
+<p>&nbsp;</p>
+<p>5. Next, go to Action &gt; Synchronize Protocol &amp; baud rate.</p>
+<p>&nbsp;</p>
+<p>6. Then, go to Action &gt; Switch to NMEA Protocol.</p>
+<p>&nbsp;</p>
+<p>7. In the pop-up window, select the 4800 baud rate under the Baud Rate and click Send.</p>
+<p> </p>
+<p>8. Close the Sirf Demo software. </p>
+<p>&nbsp;</p>
+<p>Now, try your GPS Receiver with the GPSInfo Utility (http://www.usglobalsat.com/store/downloads/GPSInfo.zip) to see if the problem persists.</p>
+<p>&nbsp;</p>
+<p>Note: Be sure and not to click on anything else in this software, as you can render your device unusable.</p>
+<p>&nbsp;</p>
+<p>38Q) How do I enable/disable Static navigation?</p>
+<p>38A) To enable/disable static navigation, please follow the instructions below:</p>
+<p>&nbsp;</p>
+<p>1. Download and install SiRF Demo: http://www.usglobalsat.com/store/downloads/SiRFDemo387.zip</p>
+<p>2. Once installed, open the SiRF Demo &amp; Select the com port and set the baud rate to 4800. Click OK.</p>
+<p>3. Choose Action &gt; Open Data Source. You will see scrolling data on the Debug View window.</p>
+<p>4. Go to Action &gt; Switch to SiRF Protocol. You will see scrolling data on the Response View window.</p>
+<p>5. Click on Navigation &gt; Static Navigation. Select enable or disable and press Send.</p>
+<p>6. Choose Action &gt; Switch to NMEA Protocol. Under Baud rate, select 4800 and tap Send.</p>
+<p>7. You will then see scrolling data back on the Debug View window.</p>
+<p>8. Click Action &gt; uncheck Open Data Source.</p>
+<p>9. Now test the device with your software and see if this resolves you issue.</p>
+
+
+</body></html>
