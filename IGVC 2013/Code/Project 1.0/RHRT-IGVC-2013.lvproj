@@ -87,7 +87,11 @@
 			<Item Name="Polarplot.vi" Type="VI" URL="../LIDAR/Polarplot.vi"/>
 		</Item>
 		<Item Name="Motors" Type="Folder">
-			<Item Name="Husky" Type="Folder"/>
+			<Item Name="Husky" Type="Folder">
+				<Item Name="clearpath_interface.lvlib" Type="Library" URL="../Motors/Husky/clearpath_interface.lvlib"/>
+				<Item Name="cwrap_crio.dll" Type="Document" URL="../Motors/Husky/cwrap_crio.dll"/>
+				<Item Name="Husky Loop.vi" Type="VI" URL="../Motors/Husky/Husky Loop.vi"/>
+			</Item>
 			<Item Name="Roboteq" Type="Folder">
 				<Item Name="Roboteq.lvlib" Type="Library" URL="../Motors/Roboteq/Roboteq.lvlib"/>
 			</Item>
@@ -315,18 +319,18 @@
 			<Item Name="AngleWrapper.vi" Type="VI" URL="../AI/AngleWrapper.vi"/>
 			<Item Name="Call Vector Field Histogram.vi" Type="VI" URL="../AI/Obstacle Avoidance/Vector Field Histogram/Call Vector Field Histogram.vi"/>
 			<Item Name="Convert Lines To Polar.vi" Type="VI" URL="../AI/Convert Lines To Polar.vi"/>
-			<Item Name="GPS Data Variables.lvlib" Type="Library" URL="../GPS/GPS Data Variables.lvlib"/>
+			<Item Name="cwrap_cRIO.dll" Type="Document" URL="cwrap_cRIO.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="hid.dll" Type="Document" URL="hid.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Histogram Avoidance.vi" Type="VI" URL="../AI/Obstacle Avoidance/Histogram Avoidance.vi"/>
 			<Item Name="Image Paths.vi" Type="VI" URL="../Cameras/Image Paths.vi"/>
-			<Item Name="IMU Data Variables.lvlib" Type="Library" URL="../IMU/IMU Data Variables.lvlib"/>
 			<Item Name="Joystick Control Time Decay.vi" Type="VI" URL="../AI/Joystick Control Time Decay.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="LIDAR Data Variables.lvlib" Type="Library" URL="../LIDAR/LIDAR Data Variables.lvlib"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="../../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="../../../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2011/resource/lvinput.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -337,7 +341,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NILVSim_FinalizeModel.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_FinalizeModel.vi"/>
-			<Item Name="NILVSim_FinishedLate.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_FinishedLate.vi"/>
 			<Item Name="NILVSim_GenerateString.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GenerateString.vi"/>
 			<Item Name="NILVSim_GetBlockNameAndCallChain Core.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetBlockNameAndCallChain Core.vi"/>
 			<Item Name="NILVSim_GetBlockNameAndCallChain.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetBlockNameAndCallChain.vi"/>
@@ -399,7 +402,6 @@
 			<Item Name="SIMSCR Execution Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIMSCR Execution Mode.ctl"/>
 			<Item Name="SIMSCR Method Is Variable Private.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/SIMSCR simulationConfigDialog.llb/SIMSCR Method Is Variable Private.vi"/>
 			<Item Name="SubGoal Loop.vi" Type="VI" URL="../AI/SubGoal Loop.vi"/>
-			<Item Name="Unsaturate Commanded Motor Velocities.vi" Type="VI" URL="../Motors/Unsaturate Commanded Motor Velocities.vi"/>
 			<Item Name="X Y to Angle.vi" Type="VI" URL="../AI/X Y to Angle.vi"/>
 			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
