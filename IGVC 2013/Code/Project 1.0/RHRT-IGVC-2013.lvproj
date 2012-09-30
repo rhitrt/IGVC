@@ -281,7 +281,6 @@
 				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi"/>
 				<Item Name="ShapeDetectionMatchOptions.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Shape Detection.llb/ShapeDetectionMatchOptions.ctl"/>
-				<Item Name="SIM Instance Name Global.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Instance Name Global.vi"/>
 				<Item Name="SIM limit type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM limit type.ctl"/>
 				<Item Name="SIM MIMO State Space.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Shared/_Datatypes/SIM MIMO State Space.ctl"/>
 				<Item Name="SIM PID (Academic).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Model Libraries/PID/SIM PID (Academic).vi"/>
@@ -290,10 +289,7 @@
 				<Item Name="SIM PID Derivative Gain.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Model Libraries/PID/subVIs/SIM PID Derivative Gain.vi"/>
 				<Item Name="SIM PID Integral Gain.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Model Libraries/PID/subVIs/SIM PID Integral Gain.vi"/>
 				<Item Name="SIM PID.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Model Libraries/PID/SIM PID.vi"/>
-				<Item Name="SIM SISO Transfer Function.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Shared/_Datatypes/SIM SISO Transfer Function.ctl"/>
-				<Item Name="SIM trigger type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM trigger type.ctl"/>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi"/>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
 				<Item Name="Straight Edge Options.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Options.ctl"/>
 				<Item Name="Straight Edge Process.ctl" Type="VI" URL="/&lt;vilib&gt;/vision/Measure.llb/Straight Edge Process.ctl"/>
 				<Item Name="subDisplayMessage.vi" Type="VI" URL="/&lt;vilib&gt;/express/express output/DisplayMessageBlock.llb/subDisplayMessage.vi"/>
@@ -313,9 +309,6 @@
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
-			<Item Name="_simSolverEnum2Txt.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/_simSolverEnum2Txt.vi"/>
-			<Item Name="_simSolvers.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/_simSolvers.ctl"/>
-			<Item Name="_simTxt2SolverEnum.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/_simTxt2SolverEnum.vi"/>
 			<Item Name="AngleWrapper.vi" Type="VI" URL="../AI/AngleWrapper.vi"/>
 			<Item Name="Call Vector Field Histogram.vi" Type="VI" URL="../AI/Obstacle Avoidance/Vector Field Histogram/Call Vector Field Histogram.vi"/>
 			<Item Name="Convert Lines To Polar.vi" Type="VI" URL="../AI/Convert Lines To Polar.vi"/>
@@ -336,21 +329,9 @@
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NI_SIM_Implementation.lvlib" Type="Library" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NI_SIM_Implementation.lvlib"/>
 			<Item Name="niimaqdx.dll" Type="Document" URL="niimaqdx.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NILVSim_FinalizeModel.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_FinalizeModel.vi"/>
-			<Item Name="NILVSim_GenerateString.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GenerateString.vi"/>
-			<Item Name="NILVSim_GetBlockNameAndCallChain Core.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetBlockNameAndCallChain Core.vi"/>
-			<Item Name="NILVSim_GetBlockNameAndCallChain.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetBlockNameAndCallChain.vi"/>
-			<Item Name="NILVSim_GetBlockNameAndCallChainSizes.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetBlockNameAndCallChainSizes.vi"/>
-			<Item Name="NILVSim_GetModelError.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetModelError.vi"/>
-			<Item Name="NILVSim_GetSimErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetSimErrorInfo.vi"/>
-			<Item Name="NILVSim_GetSimErrorString.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_GetSimErrorString.vi"/>
-			<Item Name="NILVSim_Initialize.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_Initialize.vi"/>
-			<Item Name="NILVSim_InitializeCore.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_InitializeCore.vi"/>
-			<Item Name="NILVSim_ParamChanged.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/NILVSim_ParamChanged.vi"/>
 			<Item Name="nivision.dll" Type="Document" URL="nivision.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -358,52 +339,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="Occupancy Grid.vi" Type="VI" URL="../AI/Obstacle Avoidance/Occupancy Grid.vi"/>
-			<Item Name="SIM BuildSimErr.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM BuildSimErr.vi"/>
-			<Item Name="SIM Bundle Sim Info.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Bundle Sim Info.vi"/>
-			<Item Name="SIM Clock Period From Stepsize.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Clock Period From Stepsize.vi"/>
-			<Item Name="SIM derivative (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Derivative.llb/SIM derivative (scalar).vi"/>
-			<Item Name="SIM Error Handler CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Error Handler CORE.vi"/>
-			<Item Name="SIM Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Format Message String.vi"/>
-			<Item Name="SIM Gain (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/SignalArithmetic/Implementation/NILVSim Gain.llb/SIM Gain (scalar).vi"/>
-			<Item Name="SIM Get Timing Source.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Get Timing Source.vi"/>
-			<Item Name="SIM Get Timing Sources.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Get Timing Sources.vi"/>
-			<Item Name="SIM Halt.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Utility/Implementation/SIM Halt.vi"/>
-			<Item Name="SIM Integrator (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator (scalar).vi"/>
-			<Item Name="SIM Integrator (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator (vector).vi"/>
-			<Item Name="SIM Integrator collector (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator collector (scalar).vi"/>
-			<Item Name="SIM Integrator Collector (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator Collector (vector).vi"/>
-			<Item Name="SIM Integrator distributor (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator distributor (scalar).vi"/>
-			<Item Name="SIM Integrator Distributor (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Integrator new.llb/SIM Integrator Distributor (vector).vi"/>
-			<Item Name="SIM Is Init or Final Stage.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Is Init or Final Stage.vi"/>
-			<Item Name="SIM Saturation (scalar).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Nonlinear/Implementation/NILVSim Saturation.llb/SIM Saturation (scalar).vi"/>
-			<Item Name="SIM Saturation (vector).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Nonlinear/Implementation/NILVSim Saturation.llb/SIM Saturation (vector).vi"/>
-			<Item Name="SIM SimErrorHandler.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM SimErrorHandler.vi"/>
-			<Item Name="SIM SourceType String to SrcType.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM SourceType String to SrcType.vi"/>
-			<Item Name="SIM State Space Collector (SISO).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim State Space.llb/SIM State Space Collector (SISO).vi"/>
-			<Item Name="SIM State Space Distributor (SISO).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim State Space.llb/SIM State Space Distributor (SISO).vi"/>
-			<Item Name="SIM Timing Source.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Timing Source.ctl"/>
-			<Item Name="SIM Transfer Function Direct (SISO).vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/ContinuousLinear/Implementation/NILVSim Transfer Function Direct.llb/SIM Transfer Function Direct (SISO).vi"/>
-			<Item Name="SIM Trim or Lin Param.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Model Trim and Linearize/SIM Lin Trim Shared.llb/SIM Trim or Lin Param.ctl"/>
-			<Item Name="SIM Unbundle Sim Info.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIM Unbundle Sim Info.vi"/>
-			<Item Name="SimParams.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/SimParams.ctl"/>
-			<Item Name="SIMPH Block Path to Cluster Path.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/PathSupport/SIMPH Block Path to Cluster Path.vi"/>
-			<Item Name="SIMPH Block.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Block.ctl"/>
-			<Item Name="SIMPH Get Root Simulation Info.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Get Root Simulation Info.vi"/>
-			<Item Name="SIMPH Global Control Actions.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Global Control Actions.ctl"/>
-			<Item Name="SIMPH Param Control Actions.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Param Control Actions.ctl"/>
-			<Item Name="SIMPH Param Source.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH Param Source.ctl"/>
-			<Item Name="SIMPH Read Cluster Element Value.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/SIMPH Read Cluster Element Value.vi"/>
-			<Item Name="SIMPH Root Simulation Header.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Root Simulation Header.ctl"/>
-			<Item Name="SIMPH Root Simulation Type.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/HierarchySupport/SIMPH Root Simulation Type.ctl"/>
-			<Item Name="SIMPH System.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/Typedefs/SIMPH System.ctl"/>
-			<Item Name="SIMPH Write Cluster Element Value.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/SIMPH Write Cluster Element Value.vi"/>
-			<Item Name="SIMPH_Dot_Path_To_Path_Array.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/PathSupport/SIMPH_Dot_Path_To_Path_Array.vi"/>
-			<Item Name="SIMPH_Path_Array_To_Dot_Path.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Param Hierarchy/PathSupport/SIMPH_Path_Array_To_Dot_Path.vi"/>
-			<Item Name="SIMSCR Execution Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/Simulation/Implementation/Shared/SIMSCR Execution Mode.ctl"/>
-			<Item Name="SIMSCR Method Is Variable Private.vi" Type="VI" URL="/&lt;vilib&gt;/Simulation/Scripting/Companion Diagram/SimConfigNode/SIMSCR simulationConfigDialog.llb/SIMSCR Method Is Variable Private.vi"/>
 			<Item Name="SubGoal Loop.vi" Type="VI" URL="../AI/SubGoal Loop.vi"/>
 			<Item Name="X Y to Angle.vi" Type="VI" URL="../AI/X Y to Angle.vi"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
